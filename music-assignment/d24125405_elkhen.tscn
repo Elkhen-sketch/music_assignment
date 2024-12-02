@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=3 uid="uid://5tyhlvidg3nl"]
+[gd_scene load_steps=16 format=3 uid="uid://5tyhlvidg3nl"]
 
 [ext_resource type="Texture2D" uid="uid://c46lx3fhe4wdi" path="res://Beginner Drum Kit_ Setting up the Drum Kit.jpg" id="1_6rm3y"]
 [ext_resource type="Script" path="res://drum_looper.gd" id="2_2t6h2"]
@@ -8,80 +8,25 @@
 [ext_resource type="AudioStream" uid="uid://bvdw3ugum07ck" path="res://mixed-drum-machine-hit-jazz-low-tom_E_major.wav" id="6_0prsp"]
 [ext_resource type="AudioStream" uid="uid://cgr7ppgn83rn6" path="res://2pac-bass-drum.wav" id="7_u3d4o"]
 [ext_resource type="Texture2D" uid="uid://emkheyuedb0r" path="res://icon.svg" id="8_edtqp"]
+[ext_resource type="Texture2D" uid="uid://dr8iooth0s8sh" path="res://back.png" id="9_thmgi"]
+[ext_resource type="Texture2D" uid="uid://bqbddd3l4p4j2" path="res://Untitled-1.png" id="10_22uxr"]
+[ext_resource type="Texture2D" uid="uid://d2rbqqhymwinn" path="res://floor drum.png" id="11_j5gar"]
+[ext_resource type="Texture2D" uid="uid://cnn8vtsp5p4xn" path="res://drum.png" id="12_eup7h"]
+[ext_resource type="Texture2D" uid="uid://gkgkbfu6fdna" path="res://ss.png" id="13_ktw0o"]
+[ext_resource type="AudioStream" uid="uid://bi776eftdvjxd" path="res://floor-tom-2-87286.mp3" id="14_nmaxj"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_l1eky"]
-size = Vector2(166.5, 160.5)
+size = Vector2(209.625, 127.125)
 
 [node name="Drum" type="Sprite2D"]
 position = Vector2(202, 202)
 texture = ExtResource("1_6rm3y")
 script = ExtResource("2_2t6h2")
+metadata/_edit_lock_ = true
 
-[node name="Button9" type="Button" parent="."]
-offset_left = -13.0
-offset_top = 23.0
-offset_right = 22.0
-offset_bottom = 57.0
-text = "Hit"
-
-[node name="Button8" type="Button" parent="."]
-offset_left = -53.0
-offset_top = 31.0
-offset_right = -18.0
-offset_bottom = 65.0
-text = "Hit"
-
-[node name="Button6" type="Button" parent="."]
-offset_left = -98.0
-offset_top = -41.0
-offset_right = -63.0
-offset_bottom = -7.0
-text = "Hit"
-
-[node name="Button5" type="Button" parent="."]
-offset_left = -48.0
-offset_top = -19.0
-offset_right = -13.0
-offset_bottom = 15.0
-text = "Hit"
-
-[node name="Button4" type="Button" parent="."]
-offset_left = -100.0
-offset_top = 16.0
-offset_right = -65.0
-offset_bottom = 50.0
-text = "Hit"
-
-[node name="Button3" type="Button" parent="."]
-offset_left = 17.0
-offset_top = -16.0
-offset_right = 52.0
-offset_bottom = 18.0
-text = "Hit"
-
-[node name="Button2" type="Button" parent="."]
-offset_left = 99.0
-offset_top = 56.0
-offset_right = 134.0
-offset_bottom = 90.0
-text = "Hit"
-
-[node name="Button" type="Button" parent="."]
-offset_left = 85.0
-offset_top = -22.0
-offset_right = 120.0
-offset_bottom = 12.0
-text = "Hit"
-
-[node name="floor drum" type="AudioStreamPlayer2D" parent="."]
+[node name="harmony" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("3_ri7s8")
-
-[node name="Button7" type="Button" parent="."]
-offset_left = 33.0
-offset_top = 39.0
-offset_right = 68.0
-offset_bottom = 73.0
-text = "Hit"
+volume_db = 10.642
 
 [node name="Node2D" type="Node2D" parent="."]
 script = ExtResource("2_2t6h2")
@@ -102,10 +47,176 @@ stream = ExtResource("6_0prsp")
 [node name="bass drum" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("7_u3d4o")
 
+[node name="Back" type="Sprite2D" parent="."]
+position = Vector2(375, 120)
+scale = Vector2(0.887692, 0.646)
+texture = ExtResource("9_thmgi")
+metadata/_edit_lock_ = true
+
+[node name="FloorDrum" type="Sprite2D" parent="."]
+position = Vector2(68.0391, 249.559)
+texture = ExtResource("11_j5gar")
+
+[node name="Untitled-2" type="Sprite2D" parent="."]
+position = Vector2(-79, 300)
+scale = Vector2(0.91055, 0.902074)
+texture = ExtResource("10_22uxr")
+
+[node name="Untitled-5" type="Sprite2D" parent="."]
+position = Vector2(-76.7044, 123.664)
+scale = Vector2(0.663262, 0.669712)
+texture = ExtResource("10_22uxr")
+
+[node name="Untitled-3" type="Sprite2D" parent="."]
+position = Vector2(427.437, 154.188)
+scale = Vector2(0.821674, 0.849654)
+texture = ExtResource("10_22uxr")
+
+[node name="Untitled-6" type="Sprite2D" parent="."]
+position = Vector2(46.5, 217.5)
+scale = Vector2(0.62844, 0.612903)
+texture = ExtResource("10_22uxr")
+
+[node name="Untitled-7" type="Sprite2D" parent="."]
+position = Vector2(256, 30.975)
+scale = Vector2(1.05505, 1.06889)
+texture = ExtResource("10_22uxr")
+
+[node name="Untitled-9" type="Sprite2D" parent="."]
+position = Vector2(63, 308)
+scale = Vector2(0.188073, 0.684659)
+texture = ExtResource("10_22uxr")
+
+[node name="Untitled-8" type="Sprite2D" parent="."]
+position = Vector2(184, 199.456)
+scale = Vector2(0.699368, 0.704666)
+texture = ExtResource("10_22uxr")
+
+[node name="Untitled-4" type="Sprite2D" parent="."]
+position = Vector2(48, 30.5687)
+scale = Vector2(0.844037, 0.797868)
+texture = ExtResource("10_22uxr")
+
+[node name="Untitled-1" type="Sprite2D" parent="."]
+position = Vector2(317, 321)
+texture = ExtResource("10_22uxr")
+
+[node name="Drum4" type="Sprite2D" parent="."]
+position = Vector2(-78.9609, 299.559)
+scale = Vector2(0.899441, 0.882812)
+texture = ExtResource("12_eup7h")
+
+[node name="Drum3" type="Sprite2D" parent="."]
+position = Vector2(317, 322)
+scale = Vector2(1.00493, 1.00956)
+texture = ExtResource("12_eup7h")
+
+[node name="Drum2" type="Sprite2D" parent="."]
+position = Vector2(182.212, 199.845)
+scale = Vector2(0.704839, 0.70539)
+texture = ExtResource("12_eup7h")
+
+[node name="Drum" type="Sprite2D" parent="."]
+position = Vector2(46.75, 217.75)
+scale = Vector2(0.607798, 0.58134)
+texture = ExtResource("12_eup7h")
+
+[node name="Ss4" type="Sprite2D" parent="."]
+position = Vector2(426.283, 154.73)
+scale = Vector2(0.882468, 0.953588)
+texture = ExtResource("13_ktw0o")
+
+[node name="Ss3" type="Sprite2D" parent="."]
+position = Vector2(256.011, 33.0586)
+scale = Vector2(1.09386, 1.17455)
+texture = ExtResource("13_ktw0o")
+
+[node name="Ss2" type="Sprite2D" parent="."]
+position = Vector2(47, 33)
+scale = Vector2(0.884013, 0.903599)
+texture = ExtResource("13_ktw0o")
+
+[node name="Ss" type="Sprite2D" parent="."]
+position = Vector2(-79, 124.059)
+scale = Vector2(0.703125, 0.733696)
+texture = ExtResource("13_ktw0o")
+
+[node name="Button" type="Button" parent="."]
+offset_left = 414.0
+offset_top = 129.0
+offset_right = 449.0
+offset_bottom = 163.0
+text = "Hit"
+
+[node name="Button6" type="Button" parent="."]
+offset_left = 249.0
+offset_top = 6.0
+offset_right = 284.0
+offset_bottom = 40.0
+text = "Hit"
+
+[node name="Button4" type="Button" parent="."]
+offset_left = -98.0
+offset_top = 103.0
+offset_right = -63.0
+offset_bottom = 137.0
+text = "Hit"
+
+[node name="Button2" type="Button" parent="."]
+offset_left = 39.0
+offset_top = 17.0
+offset_right = 74.0
+offset_bottom = 51.0
+text = "Hit"
+
+[node name="Button9" type="Button" parent="."]
+self_modulate = Color(1, 1, 1, 0.0392157)
+offset_left = 45.0
+offset_top = 294.0
+offset_right = 80.0
+offset_bottom = 372.0
+
+[node name="Button5" type="Button" parent="."]
+self_modulate = Color(1, 1, 1, 0.0392157)
+offset_left = 7.0
+offset_top = 178.0
+offset_right = 85.0
+offset_bottom = 259.0
+
+[node name="Button10" type="Button" parent="."]
+self_modulate = Color(1, 1, 1, 0.0392157)
+offset_left = 256.0
+offset_top = 251.0
+offset_right = 383.0
+offset_bottom = 384.0
+
+[node name="Button3" type="Button" parent="."]
+self_modulate = Color(1, 1, 1, 0.0392157)
+offset_left = 130.0
+offset_top = 146.0
+offset_right = 233.0
+offset_bottom = 250.0
+
+[node name="Button7" type="Button" parent="."]
+modulate = Color(1, 0, 0.0235294, 1)
+offset_left = 577.0
+offset_top = -156.0
+offset_right = 646.0
+offset_bottom = -125.0
+text = "Play"
+
+[node name="Button8" type="Button" parent="."]
+self_modulate = Color(1, 1, 0.184314, 0.113725)
+offset_left = -141.0
+offset_top = 233.0
+offset_right = -21.0
+offset_bottom = 358.0
+size_flags_stretch_ratio = 0.0
+
 [node name="Area2D" type="Area2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
-position = Vector2(318.75, 30.75)
+position = Vector2(800, -99.5625)
 shape = SubResource("RectangleShape2D_l1eky")
 
 [node name="ColorRect" type="ColorRect" parent="Area2D"]
@@ -116,14 +227,25 @@ offset_right = 419.0
 offset_bottom = -12.0
 mouse_filter = 2
 
-[node name="Sprite2D" type="Sprite2D" parent="Area2D"]
-position = Vector2(324, 31)
+[node name="Icon" type="Sprite2D" parent="."]
+position = Vector2(799, -101)
+scale = Vector2(1.625, 0.921875)
 texture = ExtResource("8_edtqp")
 
+[node name="floortom" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("14_nmaxj")
+volume_db = 1.0
+
+[node name="Button11" type="Button" parent="."]
+offset_right = 8.0
+offset_bottom = 8.0
+
+[connection signal="mouse_entered" from="HSlider" to="." method="_on_h_slider_mouse_entered"]
 [connection signal="button_down" from="Button9" to="." method="_on_button_9_button_down"]
-[connection signal="button_down" from="Button8" to="." method="_on_button_8_button_down"]
 [connection signal="button_down" from="Button5" to="." method="_on_button_5_button_down"]
+[connection signal="button_down" from="Button10" to="." method="_on_button_10_button_down"]
 [connection signal="button_down" from="Button3" to="." method="_on_button_3_button_down"]
 [connection signal="button_down" from="Button7" to="." method="_on_button_7_button_down"]
-[connection signal="mouse_entered" from="HSlider" to="." method="_on_h_slider_mouse_entered"]
+[connection signal="button_down" from="Button8" to="." method="_on_button_8_button_down"]
 [connection signal="input_event" from="Area2D" to="." method="_on_area_2d_input_event"]
+[connection signal="button_down" from="Button11" to="." method="_on_button_11_button_down"]
