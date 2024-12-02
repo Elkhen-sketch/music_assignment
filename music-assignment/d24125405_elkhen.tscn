@@ -1,9 +1,11 @@
-[gd_scene load_steps=5 format=3 uid="uid://5tyhlvidg3nl"]
+[gd_scene load_steps=7 format=3 uid="uid://5tyhlvidg3nl"]
 
 [ext_resource type="Texture2D" uid="uid://c46lx3fhe4wdi" path="res://Beginner Drum Kit_ Setting up the Drum Kit.jpg" id="1_6rm3y"]
 [ext_resource type="Script" path="res://drum_looper.gd" id="2_2t6h2"]
 [ext_resource type="AudioStream" uid="uid://bi776eftdvjxd" path="res://floor-tom-2-87286.mp3" id="2_jq0hq"]
 [ext_resource type="AudioStream" uid="uid://cesv0wsah4611" path="res://MUSCPerc_Medium tom 1 (ID 2333)_BSB.wav" id="4_hbkad"]
+[ext_resource type="AudioStream" uid="uid://cbf06lm0md3nv" path="res://tr808-snare-drum-241403.mp3" id="5_x4n78"]
+[ext_resource type="AudioStream" uid="uid://bvdw3ugum07ck" path="res://mixed-drum-machine-hit-jazz-low-tom_E_major.wav" id="6_0prsp"]
 
 [node name="Drum" type="Sprite2D"]
 position = Vector2(202, 202)
@@ -25,10 +27,10 @@ offset_bottom = -7.0
 text = "Hit"
 
 [node name="Button5" type="Button" parent="."]
-offset_left = 15.0
-offset_top = -16.0
-offset_right = 50.0
-offset_bottom = 18.0
+offset_left = -48.0
+offset_top = -19.0
+offset_right = -13.0
+offset_bottom = 15.0
 text = "Hit"
 
 [node name="Button4" type="Button" parent="."]
@@ -39,10 +41,10 @@ offset_bottom = 50.0
 text = "Hit"
 
 [node name="Button3" type="Button" parent="."]
-offset_left = -48.0
-offset_top = -18.0
-offset_right = -13.0
-offset_bottom = 16.0
+offset_left = 17.0
+offset_top = -16.0
+offset_right = 52.0
+offset_bottom = 18.0
 text = "Hit"
 
 [node name="Button2" type="Button" parent="."]
@@ -59,7 +61,7 @@ offset_right = 120.0
 offset_bottom = 12.0
 text = "Hit"
 
-[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+[node name="floor drum" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("2_jq0hq")
 
 [node name="Button7" type="Button" parent="."]
@@ -75,5 +77,17 @@ script = ExtResource("2_2t6h2")
 [node name="mediumtom" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("4_hbkad")
 
+[node name="HSlider" type="HSlider" parent="."]
+offset_right = 8.0
+offset_bottom = 16.0
+
+[node name="snare drum" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("5_x4n78")
+
+[node name="small tom" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("6_0prsp")
+
+[connection signal="button_down" from="Button8" to="." method="_on_button_8_button_down"]
+[connection signal="button_down" from="Button5" to="." method="_on_button_5_button_down"]
 [connection signal="button_down" from="Button3" to="." method="_on_button_3_button_down"]
 [connection signal="button_down" from="Button7" to="." method="_on_button_7_button_down"]

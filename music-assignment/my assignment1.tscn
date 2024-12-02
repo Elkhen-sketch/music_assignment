@@ -110,10 +110,10 @@ text = "Next Note
 "
 
 [node name="HSlider3" type="HSlider" parent="."]
-offset_left = 112.0
-offset_top = 253.0
-offset_right = 716.0
-offset_bottom = 269.0
+offset_left = 131.0
+offset_top = 245.0
+offset_right = 735.0
+offset_bottom = 261.0
 
 [connection signal="area_entered" from="Area2D" to="." method="_on_area_2d_area_entered"]
 [connection signal="input_event" from="Area2D" to="." method="_on_area_2d_input_event"]
