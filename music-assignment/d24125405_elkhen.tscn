@@ -1,16 +1,28 @@
-[gd_scene load_steps=7 format=3 uid="uid://5tyhlvidg3nl"]
+[gd_scene load_steps=10 format=3 uid="uid://5tyhlvidg3nl"]
 
 [ext_resource type="Texture2D" uid="uid://c46lx3fhe4wdi" path="res://Beginner Drum Kit_ Setting up the Drum Kit.jpg" id="1_6rm3y"]
 [ext_resource type="Script" path="res://drum_looper.gd" id="2_2t6h2"]
-[ext_resource type="AudioStream" uid="uid://bi776eftdvjxd" path="res://floor-tom-2-87286.mp3" id="2_jq0hq"]
+[ext_resource type="AudioStream" uid="uid://dud26gwijfgyk" path="res://audio/Harmony in Creation.mp3" id="3_ri7s8"]
 [ext_resource type="AudioStream" uid="uid://cesv0wsah4611" path="res://MUSCPerc_Medium tom 1 (ID 2333)_BSB.wav" id="4_hbkad"]
 [ext_resource type="AudioStream" uid="uid://cbf06lm0md3nv" path="res://tr808-snare-drum-241403.mp3" id="5_x4n78"]
 [ext_resource type="AudioStream" uid="uid://bvdw3ugum07ck" path="res://mixed-drum-machine-hit-jazz-low-tom_E_major.wav" id="6_0prsp"]
+[ext_resource type="AudioStream" uid="uid://cgr7ppgn83rn6" path="res://2pac-bass-drum.wav" id="7_u3d4o"]
+[ext_resource type="Texture2D" uid="uid://emkheyuedb0r" path="res://icon.svg" id="8_edtqp"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_l1eky"]
+size = Vector2(166.5, 160.5)
 
 [node name="Drum" type="Sprite2D"]
 position = Vector2(202, 202)
 texture = ExtResource("1_6rm3y")
 script = ExtResource("2_2t6h2")
+
+[node name="Button9" type="Button" parent="."]
+offset_left = -13.0
+offset_top = 23.0
+offset_right = 22.0
+offset_bottom = 57.0
+text = "Hit"
 
 [node name="Button8" type="Button" parent="."]
 offset_left = -53.0
@@ -62,7 +74,7 @@ offset_bottom = 12.0
 text = "Hit"
 
 [node name="floor drum" type="AudioStreamPlayer2D" parent="."]
-stream = ExtResource("2_jq0hq")
+stream = ExtResource("3_ri7s8")
 
 [node name="Button7" type="Button" parent="."]
 offset_left = 33.0
@@ -87,7 +99,31 @@ stream = ExtResource("5_x4n78")
 [node name="small tom" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("6_0prsp")
 
+[node name="bass drum" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("7_u3d4o")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(318.75, 30.75)
+shape = SubResource("RectangleShape2D_l1eky")
+
+[node name="ColorRect" type="ColorRect" parent="Area2D"]
+visible = false
+offset_left = 236.0
+offset_top = -52.0
+offset_right = 419.0
+offset_bottom = -12.0
+mouse_filter = 2
+
+[node name="Sprite2D" type="Sprite2D" parent="Area2D"]
+position = Vector2(324, 31)
+texture = ExtResource("8_edtqp")
+
+[connection signal="button_down" from="Button9" to="." method="_on_button_9_button_down"]
 [connection signal="button_down" from="Button8" to="." method="_on_button_8_button_down"]
 [connection signal="button_down" from="Button5" to="." method="_on_button_5_button_down"]
 [connection signal="button_down" from="Button3" to="." method="_on_button_3_button_down"]
 [connection signal="button_down" from="Button7" to="." method="_on_button_7_button_down"]
+[connection signal="mouse_entered" from="HSlider" to="." method="_on_h_slider_mouse_entered"]
+[connection signal="input_event" from="Area2D" to="." method="_on_area_2d_input_event"]
