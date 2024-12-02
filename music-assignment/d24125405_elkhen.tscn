@@ -1,0 +1,69 @@
+[gd_scene load_steps=4 format=3 uid="uid://cjmwcja4d06xe"]
+
+[ext_resource type="Texture2D" uid="uid://c46lx3fhe4wdi" path="res://Beginner Drum Kit_ Setting up the Drum Kit.jpg" id="1_6rm3y"]
+[ext_resource type="Script" path="res://drum_looper.gd" id="2_2t6h2"]
+[ext_resource type="AudioStream" uid="uid://bi776eftdvjxd" path="res://floor-tom-2-87286.mp3" id="2_jq0hq"]
+
+[node name="Drum" type="Sprite2D"]
+position = Vector2(202, 202)
+texture = ExtResource("1_6rm3y")
+script = ExtResource("2_2t6h2")
+
+[node name="Button8" type="Button" parent="."]
+offset_left = -53.0
+offset_top = 31.0
+offset_right = -18.0
+offset_bottom = 65.0
+text = "Hit"
+
+[node name="Button6" type="Button" parent="."]
+offset_left = -98.0
+offset_top = -41.0
+offset_right = -63.0
+offset_bottom = -7.0
+text = "Hit"
+
+[node name="Button5" type="Button" parent="."]
+offset_left = 15.0
+offset_top = -16.0
+offset_right = 50.0
+offset_bottom = 18.0
+text = "Hit"
+
+[node name="Button4" type="Button" parent="."]
+offset_left = -100.0
+offset_top = 16.0
+offset_right = -65.0
+offset_bottom = 50.0
+text = "Hit"
+
+[node name="Button3" type="Button" parent="."]
+offset_left = -48.0
+offset_top = -18.0
+offset_right = -13.0
+offset_bottom = 16.0
+text = "Hit"
+
+[node name="Button2" type="Button" parent="."]
+offset_left = 99.0
+offset_top = 56.0
+offset_right = 134.0
+offset_bottom = 90.0
+text = "Hit"
+
+[node name="Button" type="Button" parent="."]
+offset_left = 85.0
+offset_top = -22.0
+offset_right = 120.0
+offset_bottom = 12.0
+text = "Hit"
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("2_jq0hq")
+
+[node name="Button7" type="Button" parent="."]
+offset_left = 33.0
+offset_top = 39.0
+offset_right = 68.0
+offset_bottom = 73.0
+text = "Hit"
