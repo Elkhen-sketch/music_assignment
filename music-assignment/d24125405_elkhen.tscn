@@ -1,4 +1,4 @@
-[gd_scene load_steps=4 format=3 uid="uid://cjmwcja4d06xe"]
+[gd_scene load_steps=4 format=3 uid="uid://5tyhlvidg3nl"]
 
 [ext_resource type="Texture2D" uid="uid://c46lx3fhe4wdi" path="res://Beginner Drum Kit_ Setting up the Drum Kit.jpg" id="1_6rm3y"]
 [ext_resource type="Script" path="res://drum_looper.gd" id="2_2t6h2"]
@@ -67,3 +67,8 @@ offset_top = 39.0
 offset_right = 68.0
 offset_bottom = 73.0
 text = "Hit"
+
+[node name="Node2D" type="Node2D" parent="."]
+script = ExtResource("2_2t6h2")
+
+[connection signal="button_down" from="Button7" to="." method="_on_button_7_button_down"]
