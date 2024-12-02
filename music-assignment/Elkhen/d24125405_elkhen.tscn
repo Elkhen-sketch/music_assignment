@@ -69,4 +69,5 @@ text = "Hit"
 position = Vector2(-33, -39)
 stream = ExtResource("2_mtpm4")
 
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
 [connection signal="button_down" from="Button7" to="." method="_on_button_7_button_down"]
