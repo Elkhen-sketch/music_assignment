@@ -79,3 +79,18 @@ func _on_buttoncrushsymbal_button_down() -> void:
 func _on_buttonclay_button_down() -> void:
 	$clay.play()
 	pass # Replace with function body.
+
+
+func _on_button_17_button_down() -> void:
+	$"loca people".play()
+	pass # Replace with function body.
+
+
+func _on_button_15_button_down() -> void:
+	$selfishD.play()
+	pass # Replace with function body.
+
+
+func _on_button_16_button_down() -> void:
+	$berserkrD.play()
+	pass # Replace with function body.
