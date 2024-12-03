@@ -2,7 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://c46lx3fhe4wdi" path="res://Beginner Drum Kit_ Setting up the Drum Kit.jpg" id="1_6rm3y"]
 [ext_resource type="Script" path="res://drum_looper.gd" id="2_2t6h2"]
-[ext_resource type="AudioStream" uid="uid://dud26gwijfgyk" path="res://audio/Harmony in Creation.mp3" id="3_ri7s8"]
+[ext_resource type="AudioStream" uid="uid://dqhn8bg15fb66" path="res://Demeter - HUSTLER  CAR MUSIC MIX  DEEP HOUSE MIX.mp3" id="3_w751x"]
 [ext_resource type="AudioStream" uid="uid://cesv0wsah4611" path="res://MUSCPerc_Medium tom 1 (ID 2333)_BSB.wav" id="4_hbkad"]
 [ext_resource type="AudioStream" uid="uid://cbf06lm0md3nv" path="res://tr808-snare-drum-241403.mp3" id="5_x4n78"]
 [ext_resource type="AudioStream" uid="uid://bvdw3ugum07ck" path="res://mixed-drum-machine-hit-jazz-low-tom_E_major.wav" id="6_0prsp"]
@@ -23,28 +23,45 @@ position = Vector2(202, 202)
 texture = ExtResource("1_6rm3y")
 script = ExtResource("2_2t6h2")
 metadata/_edit_lock_ = true
+metadata/_edit_horizontal_guides_ = [-13.0]
 
 [node name="harmony" type="AudioStreamPlayer2D" parent="."]
-stream = ExtResource("3_ri7s8")
+position = Vector2(1.40637, -54.5805)
+rotation = -0.00159953
+stream = ExtResource("3_w751x")
 volume_db = 10.642
 
 [node name="Node2D" type="Node2D" parent="."]
+position = Vector2(1.40637, -54.5805)
+rotation = -0.00159953
 script = ExtResource("2_2t6h2")
 
 [node name="mediumtom" type="AudioStreamPlayer2D" parent="."]
+position = Vector2(1.40637, -54.5805)
+rotation = -0.00159953
 stream = ExtResource("4_hbkad")
 
 [node name="HSlider" type="HSlider" parent="."]
-offset_right = 8.0
-offset_bottom = 16.0
+offset_left = 1.69276
+offset_top = -54.7637
+offset_right = 9.69276
+offset_bottom = -38.7637
+rotation = -0.00159953
+pivot_offset = Vector2(114.422, 179.135)
 
 [node name="snare drum" type="AudioStreamPlayer2D" parent="."]
+position = Vector2(1.40637, -54.5805)
+rotation = -0.00159953
 stream = ExtResource("5_x4n78")
 
 [node name="small tom" type="AudioStreamPlayer2D" parent="."]
+position = Vector2(1.40637, -54.5805)
+rotation = -0.00159953
 stream = ExtResource("6_0prsp")
 
 [node name="bass drum" type="AudioStreamPlayer2D" parent="."]
+position = Vector2(1.40637, -54.5805)
+rotation = -0.00159953
 stream = ExtResource("7_u3d4o")
 
 [node name="Back" type="Sprite2D" parent="."]
@@ -54,169 +71,190 @@ texture = ExtResource("9_thmgi")
 metadata/_edit_lock_ = true
 
 [node name="FloorDrum" type="Sprite2D" parent="."]
-position = Vector2(68.0391, 249.559)
+position = Vector2(112, 123.236)
+rotation = 1.56525
+scale = Vector2(1.0168, 0.999984)
 texture = ExtResource("11_j5gar")
+offset = Vector2(-46.782, 70.5328)
 
 [node name="Untitled-2" type="Sprite2D" parent="."]
-position = Vector2(-79, 300)
+position = Vector2(126, -202)
+rotation = -0.00159953
 scale = Vector2(0.91055, 0.902074)
 texture = ExtResource("10_22uxr")
+offset = Vector2(-212.95, 133.846)
 
 [node name="Untitled-5" type="Sprite2D" parent="."]
-position = Vector2(-76.7044, 123.664)
+position = Vector2(83.1727, 81.1538)
+rotation = 1.56661
 scale = Vector2(0.663262, 0.669712)
 texture = ExtResource("10_22uxr")
+offset = Vector2(-288.459, -83.0111)
 
 [node name="Untitled-3" type="Sprite2D" parent="."]
-position = Vector2(427.437, 154.188)
+position = Vector2(43.8839, 39.3394)
+rotation = 1.56614
 scale = Vector2(0.821674, 0.849654)
 texture = ExtResource("10_22uxr")
+offset = Vector2(380.647, -28.5565)
 
 [node name="Untitled-6" type="Sprite2D" parent="."]
-position = Vector2(46.5, 217.5)
+position = Vector2(112.939, 112.682)
+rotation = 1.57727
 scale = Vector2(0.62844, 0.612903)
 texture = ExtResource("10_22uxr")
+offset = Vector2(-108.634, 62.7169)
 
 [node name="Untitled-7" type="Sprite2D" parent="."]
-position = Vector2(256, 30.975)
+position = Vector2(147.025, 103.373)
+rotation = 1.57392
 scale = Vector2(1.05505, 1.06889)
 texture = ExtResource("10_22uxr")
+offset = Vector2(134.144, -138.228)
 
 [node name="Untitled-9" type="Sprite2D" parent="."]
-position = Vector2(63, 308)
-scale = Vector2(0.188073, 0.684659)
+position = Vector2(90, 127.236)
+rotation = 1.59951
+scale = Vector2(0.188073, 0.642699)
 texture = ExtResource("10_22uxr")
+offset = Vector2(-276.035, 188.365)
 
 [node name="Untitled-8" type="Sprite2D" parent="."]
-position = Vector2(184, 199.456)
+position = Vector2(111.14, 132.638)
+rotation = 1.57127
 scale = Vector2(0.699368, 0.704666)
 texture = ExtResource("10_22uxr")
+offset = Vector2(99.0306, 29.2554)
 
 [node name="Untitled-4" type="Sprite2D" parent="."]
-position = Vector2(48, 30.5687)
+position = Vector2(122.142, 93.3183)
+rotation = 1.57325
 scale = Vector2(0.844037, 0.797868)
 texture = ExtResource("10_22uxr")
+offset = Vector2(-78.7536, -186.108)
 
 [node name="Untitled-1" type="Sprite2D" parent="."]
-position = Vector2(317, 321)
+position = Vector2(45.3715, 55.9917)
+rotation = 1.56544
 texture = ExtResource("10_22uxr")
+offset = Vector2(202.064, 142.372)
 
 [node name="Drum4" type="Sprite2D" parent="."]
-position = Vector2(-78.9609, 299.559)
+position = Vector2(46, 114)
+rotation = 1.59635
 scale = Vector2(0.899441, 0.882812)
 texture = ExtResource("12_eup7h")
+offset = Vector2(-215.536, 136.266)
 
 [node name="Drum3" type="Sprite2D" parent="."]
-position = Vector2(317, 322)
+position = Vector2(43, 57)
+rotation = 1.56544
 scale = Vector2(1.00493, 1.00956)
 texture = ExtResource("12_eup7h")
+offset = Vector2(201.071, 142.014)
 
 [node name="Drum2" type="Sprite2D" parent="."]
-position = Vector2(182.212, 199.845)
+position = Vector2(112.141, 134.638)
+rotation = 1.57127
 scale = Vector2(0.704839, 0.70539)
 texture = ExtResource("12_eup7h")
+offset = Vector2(95.7242, 29.7729)
 
 [node name="Drum" type="Sprite2D" parent="."]
-position = Vector2(46.75, 217.75)
+position = Vector2(112.939, 114.682)
+rotation = 1.57727
 scale = Vector2(0.607798, 0.58134)
 texture = ExtResource("12_eup7h")
+offset = Vector2(-111.913, 66.5528)
 
 [node name="Ss4" type="Sprite2D" parent="."]
-position = Vector2(426.283, 154.73)
+position = Vector2(43.8839, 39.3394)
+rotation = 1.56614
 scale = Vector2(0.882468, 0.953588)
 texture = ExtResource("13_ktw0o")
+offset = Vector2(353.115, -24.8777)
 
 [node name="Ss3" type="Sprite2D" parent="."]
-position = Vector2(256.011, 33.0586)
+position = Vector2(147.025, 103.373)
+rotation = 1.57392
 scale = Vector2(1.09386, 1.17455)
 texture = ExtResource("13_ktw0o")
+offset = Vector2(129.391, -124.019)
 
 [node name="Ss2" type="Sprite2D" parent="."]
-position = Vector2(47, 33)
+position = Vector2(122, 93)
+rotation = 1.57325
 scale = Vector2(0.884013, 0.903599)
 texture = ExtResource("13_ktw0o")
+offset = Vector2(-76.3278, -161.642)
 
 [node name="Ss" type="Sprite2D" parent="."]
-position = Vector2(-79, 124.059)
+position = Vector2(85.1727, 81.1538)
+rotation = 1.56661
 scale = Vector2(0.703125, 0.733696)
 texture = ExtResource("13_ktw0o")
-
-[node name="Button" type="Button" parent="."]
-offset_left = 414.0
-offset_top = 129.0
-offset_right = 449.0
-offset_bottom = 163.0
-text = "Hit"
-
-[node name="Button6" type="Button" parent="."]
-offset_left = 249.0
-offset_top = 6.0
-offset_right = 284.0
-offset_bottom = 40.0
-text = "Hit"
-
-[node name="Button4" type="Button" parent="."]
-offset_left = -98.0
-offset_top = 103.0
-offset_right = -63.0
-offset_bottom = 137.0
-text = "Hit"
-
-[node name="Button2" type="Button" parent="."]
-offset_left = 39.0
-offset_top = 17.0
-offset_right = 74.0
-offset_bottom = 51.0
-text = "Hit"
+offset = Vector2(-275.371, -75.2385)
 
 [node name="Button9" type="Button" parent="."]
 self_modulate = Color(1, 1, 1, 0.0392157)
-offset_left = 45.0
-offset_top = 294.0
-offset_right = 80.0
-offset_bottom = 372.0
+offset_left = 50.0
+offset_top = 235.236
+offset_right = 85.0
+offset_bottom = 313.236
+rotation = 1.56412
+pivot_offset = Vector2(69.8922, -114.937)
 
 [node name="Button5" type="Button" parent="."]
 self_modulate = Color(1, 1, 1, 0.0392157)
-offset_left = 7.0
-offset_top = 178.0
-offset_right = 85.0
-offset_bottom = 259.0
+offset_left = 7.9386
+offset_top = 114.682
+offset_right = 85.9386
+offset_bottom = 195.682
+rotation = 1.57727
+pivot_offset = Vector2(107.707, 1.12375)
 
 [node name="Button10" type="Button" parent="."]
 self_modulate = Color(1, 1, 1, 0.0392157)
-offset_left = 256.0
-offset_top = 251.0
-offset_right = 383.0
-offset_bottom = 384.0
+offset_left = 187.371
+offset_top = 132.992
+offset_right = 314.371
+offset_bottom = 265.992
+rotation = 1.56544
+pivot_offset = Vector2(-141.176, -72.2744)
 
 [node name="Button3" type="Button" parent="."]
 self_modulate = Color(1, 1, 1, 0.0392157)
-offset_left = 130.0
-offset_top = 146.0
-offset_right = 233.0
-offset_bottom = 250.0
+offset_left = 127.14
+offset_top = 100.638
+offset_right = 230.14
+offset_bottom = 204.638
+rotation = 1.57127
+pivot_offset = Vector2(-15.3444, 32.927)
 
 [node name="Button7" type="Button" parent="."]
 modulate = Color(1, 0, 0.0235294, 1)
-offset_left = 577.0
-offset_top = -156.0
-offset_right = 646.0
-offset_bottom = -125.0
+offset_left = 610.0
+offset_top = -127.0
+offset_right = 679.0
+offset_bottom = -96.0
 text = "Play"
 
 [node name="Button8" type="Button" parent="."]
 self_modulate = Color(1, 1, 0.184314, 0.113725)
-offset_left = -141.0
-offset_top = 233.0
-offset_right = -21.0
-offset_bottom = 358.0
+offset_left = -134.0
+offset_top = -159.0
+offset_right = -15.0
+offset_bottom = -35.0
+rotation = -0.0443469
+pivot_offset = Vector2(255.794, -53.6394)
 size_flags_stretch_ratio = 0.0
 
 [node name="Area2D" type="Area2D" parent="."]
+position = Vector2(19, -99.7638)
+rotation = -0.00159953
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
-position = Vector2(800, -99.5625)
+position = Vector2(779.951, 31.0114)
 shape = SubResource("RectangleShape2D_l1eky")
 
 [node name="ColorRect" type="ColorRect" parent="Area2D"]
@@ -227,18 +265,37 @@ offset_right = 419.0
 offset_bottom = -12.0
 mouse_filter = 2
 
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Area2D"]
+
 [node name="Icon" type="Sprite2D" parent="."]
-position = Vector2(799, -101)
+position = Vector2(799, -69)
 scale = Vector2(1.625, 0.921875)
 texture = ExtResource("8_edtqp")
 
 [node name="floortom" type="AudioStreamPlayer2D" parent="."]
+position = Vector2(18, -45.7638)
+rotation = -0.00159953
 stream = ExtResource("14_nmaxj")
 volume_db = 1.0
 
 [node name="Button11" type="Button" parent="."]
-offset_right = 8.0
-offset_bottom = 8.0
+offset_left = 53.0
+offset_top = -72.7638
+offset_right = 61.0
+offset_bottom = -64.7638
+rotation = -0.00159953
+pivot_offset = Vector2(114.422, 179.135)
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+
+[node name="Button" type="Button" parent="."]
+modulate = Color(1, 0, 0.0235294, 1)
+light_mask = 0
+offset_left = 401.0
+offset_top = -127.0
+offset_right = 610.0
+offset_bottom = -96.0
+text = "Demeter: HUSTLER   22:11"
 
 [connection signal="mouse_entered" from="HSlider" to="." method="_on_h_slider_mouse_entered"]
 [connection signal="button_down" from="Button9" to="." method="_on_button_9_button_down"]
