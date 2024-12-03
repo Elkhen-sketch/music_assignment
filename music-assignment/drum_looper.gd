@@ -62,5 +62,20 @@ func _on_button_12_button_down() -> void:
 
 
 func _on_button_13_button_down() -> void:
-	$"floor tom".play()
+	$lowtomD.play()
+	pass # Replace with function body.
+
+
+func _on_buttonhihat_button_down() -> void:
+	$hihat.play()
+	pass # Replace with function body.
+
+
+func _on_buttoncrushsymbal_button_down() -> void:
+	$"crush symbal".play()
+	pass # Replace with function body.
+
+
+func _on_buttonclay_button_down() -> void:
+	$clay.play()
 	pass # Replace with function body.

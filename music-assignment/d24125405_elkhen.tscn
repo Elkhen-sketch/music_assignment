@@ -1,4 +1,4 @@
-[gd_scene load_steps=18 format=3 uid="uid://5tyhlvidg3nl"]
+[gd_scene load_steps=23 format=3 uid="uid://5tyhlvidg3nl"]
 
 [ext_resource type="Texture2D" uid="uid://c46lx3fhe4wdi" path="res://Beginner Drum Kit_ Setting up the Drum Kit.jpg" id="1_6rm3y"]
 [ext_resource type="Script" path="res://drum_looper.gd" id="2_2t6h2"]
@@ -10,11 +10,16 @@
 [ext_resource type="Texture2D" uid="uid://emkheyuedb0r" path="res://icon.svg" id="8_edtqp"]
 [ext_resource type="Texture2D" uid="uid://dr8iooth0s8sh" path="res://back.png" id="9_thmgi"]
 [ext_resource type="Texture2D" uid="uid://bqbddd3l4p4j2" path="res://Untitled-1.png" id="10_22uxr"]
+[ext_resource type="AudioStream" uid="uid://bh8imgkjq52fs" path="res://low-floor-tom-level-2-106160.mp3" id="10_bpwvk"]
 [ext_resource type="Texture2D" uid="uid://d2rbqqhymwinn" path="res://floor drum.png" id="11_j5gar"]
 [ext_resource type="Texture2D" uid="uid://cnn8vtsp5p4xn" path="res://drum.png" id="12_eup7h"]
 [ext_resource type="Texture2D" uid="uid://gkgkbfu6fdna" path="res://ss.png" id="13_ktw0o"]
 [ext_resource type="AudioStream" uid="uid://bi776eftdvjxd" path="res://floor-tom-2-87286.mp3" id="14_nmaxj"]
+[ext_resource type="AudioStream" uid="uid://dcq8c512l1pwr" path="res://hi-hat-231042.mp3" id="14_w2hqf"]
 [ext_resource type="AudioStream" uid="uid://copi0b7a3jols" path="res://Call Me Sleeper - SINFUL.mp3" id="15_a2w4l"]
+[ext_resource type="Texture2D" uid="uid://1n7yr87itdhj" path="res://mmm.png" id="16_1wxrd"]
+[ext_resource type="AudioStream" uid="uid://bphonlgxld2gd" path="res://tr707-crash-cymbal-241376.mp3" id="19_udwwn"]
+[ext_resource type="AudioStream" uid="uid://tq1qq2wf3vtu" path="res://long-ride-cymbal-2-36337.mp3" id="20_l2w0i"]
 
 [sub_resource type="Environment" id="Environment_pepdv"]
 background_mode = 3
@@ -89,6 +94,13 @@ rotation = 1.59951
 scale = Vector2(0.188073, 0.642699)
 texture = ExtResource("10_22uxr")
 offset = Vector2(-276.035, 188.365)
+
+[node name="lowtomD" type="AudioStreamPlayer2D" parent="."]
+position = Vector2(72, 123.236)
+rotation = 1.56525
+scale = Vector2(1.0168, 0.999984)
+stream = ExtResource("10_bpwvk")
+volume_db = 20.183
 
 [node name="bassdrum" type="Sprite2D" parent="."]
 position = Vector2(72, 123.236)
@@ -190,10 +202,10 @@ offset = Vector2(-111.913, 66.5528)
 
 [node name="Button13" type="Button" parent="."]
 self_modulate = Color(1, 1, 1, 0.238)
-offset_left = -213.0
-offset_top = 186.0
-offset_right = -67.0
-offset_bottom = 321.0
+offset_left = -209.0
+offset_top = 184.0
+offset_right = -63.0
+offset_bottom = 319.0
 
 [node name="Ss4" type="Sprite2D" parent="."]
 position = Vector2(8, 53)
@@ -210,11 +222,23 @@ texture = ExtResource("13_ktw0o")
 offset = Vector2(129.391, -124.019)
 
 [node name="Ss2" type="Sprite2D" parent="."]
-position = Vector2(53.0399, 75.0127)
+position = Vector2(45.9836, 76.6491)
 rotation = 1.57325
-scale = Vector2(0.884013, 0.903599)
+scale = Vector2(0.913086, 0.940275)
 texture = ExtResource("13_ktw0o")
 offset = Vector2(-76.3278, -161.642)
+
+[node name="hihat" type="AudioStreamPlayer2D" parent="."]
+position = Vector2(17.4591, 84.1646)
+stream = ExtResource("14_w2hqf")
+volume_db = 24.0
+
+[node name="Buttonhihat" type="Button" parent="."]
+self_modulate = Color(1, 1, 1, 0)
+offset_left = 26.0
+offset_top = -159.0
+offset_right = 116.0
+offset_bottom = -57.0
 
 [node name="Ss" type="Sprite2D" parent="."]
 position = Vector2(17.4591, 84.1646)
@@ -226,18 +250,18 @@ offset = Vector2(-275.371, -75.2385)
 [node name="Button9" type="Button" parent="."]
 self_modulate = Color(1, 1, 1, 0.0392157)
 offset_left = 10.0
-offset_top = 235.236
-offset_right = 45.0
-offset_bottom = 313.236
+offset_top = 231.0
+offset_right = 57.0
+offset_bottom = 353.0
 rotation = 1.56412
 pivot_offset = Vector2(69.8922, -114.937)
 
 [node name="Button5" type="Button" parent="."]
 self_modulate = Color(1, 1, 1, 0.0392157)
-offset_left = 2.0
-offset_top = 249.0
-offset_right = 110.0
-offset_bottom = 351.0
+offset_left = -156.0
+offset_top = -39.0
+offset_right = -22.0
+offset_bottom = 81.0
 rotation = 1.57727
 pivot_offset = Vector2(107.707, 1.12375)
 
@@ -261,11 +285,11 @@ text = "Play"
 
 [node name="Button8" type="Button" parent="."]
 self_modulate = Color(1, 1, 0.184314, 0.113725)
-offset_left = -174.0
-offset_top = -159.0
-offset_right = -55.0
-offset_bottom = -35.0
-rotation = -0.0443469
+offset_left = 10.0
+offset_top = 148.0
+offset_right = 95.0
+offset_bottom = 233.0
+rotation = -0.00192855
 pivot_offset = Vector2(255.794, -53.6394)
 size_flags_stretch_ratio = 0.0
 
@@ -338,8 +362,92 @@ volume_db = 1.0
 [node name="floor tom" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("14_nmaxj")
 
+[node name="Mmm" type="Sprite2D" parent="."]
+position = Vector2(-107, 252)
+rotation = 1.56541
+scale = Vector2(0.0896983, 0.0827953)
+texture = ExtResource("16_1wxrd")
+
+[node name="Mmm2" type="Sprite2D" parent="."]
+position = Vector2(77, 191)
+rotation = 1.57042
+scale = Vector2(0.0553523, 0.0643554)
+texture = ExtResource("16_1wxrd")
+
+[node name="Mmm3" type="Sprite2D" parent="."]
+position = Vector2(53.5, 42.9987)
+rotation = 1.57346
+scale = Vector2(0.0575153, 0.0598907)
+texture = ExtResource("16_1wxrd")
+
+[node name="Mmm4" type="Sprite2D" parent="."]
+position = Vector2(-75.9995, -88.0032)
+rotation = 1.57171
+scale = Vector2(0.0590722, 0.0700682)
+texture = ExtResource("16_1wxrd")
+
+[node name="Mmm5" type="Sprite2D" parent="."]
+position = Vector2(-129, 70)
+rotation = 1.56967
+scale = Vector2(0.0960989, 0.101106)
+texture = ExtResource("16_1wxrd")
+
+[node name="Mmm6" type="Sprite2D" parent="."]
+position = Vector2(97, -144)
+rotation = 1.57018
+scale = Vector2(0.0666959, 0.0756872)
+texture = ExtResource("16_1wxrd")
+
+[node name="Mmm7" type="Sprite2D" parent="."]
+position = Vector2(70, 321)
+rotation = 1.57031
+scale = Vector2(0.0758443, 0.0823004)
+texture = ExtResource("16_1wxrd")
+
+[node name="Mmm8" type="Sprite2D" parent="."]
+position = Vector2(225, -36)
+rotation = 1.56603
+scale = Vector2(0.0682609, 0.0758275)
+texture = ExtResource("16_1wxrd")
+
+[node name="Mmm9" type="Sprite2D" parent="."]
+position = Vector2(277.988, 173.228)
+rotation = 1.564
+scale = Vector2(0.0673795, 0.0741213)
+texture = ExtResource("16_1wxrd")
+
+[node name="crush symbal" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("19_udwwn")
+volume_db = 8.588
+
+[node name="Buttoncrushsymbal" type="Button" parent="."]
+self_modulate = Color(1, 1, 1, 0)
+offset_left = 135.0
+offset_top = -52.0
+offset_right = 268.0
+offset_bottom = 72.0
+
+[node name="Buttoncrushsymbal" type="Button" parent="Buttoncrushsymbal"]
+self_modulate = Color(1, 1, 1, 0)
+offset_left = 42.0
+offset_top = 213.0
+offset_right = 178.0
+offset_bottom = 363.0
+
+[node name="clay" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("20_l2w0i")
+volume_db = 13.358
+
+[node name="Buttonclay" type="Button" parent="."]
+self_modulate = Color(1, 1, 1, 0)
+offset_left = -25.0
+offset_top = 304.0
+offset_right = 96.0
+offset_bottom = 426.0
+
 [connection signal="mouse_entered" from="HSlider" to="." method="_on_h_slider_mouse_entered"]
 [connection signal="button_down" from="Button13" to="." method="_on_button_13_button_down"]
+[connection signal="button_down" from="Buttonhihat" to="." method="_on_buttonhihat_button_down"]
 [connection signal="button_down" from="Button9" to="." method="_on_button_9_button_down"]
 [connection signal="button_down" from="Button5" to="." method="_on_button_5_button_down"]
 [connection signal="button_down" from="Button3" to="." method="_on_button_3_button_down"]
@@ -348,3 +456,6 @@ stream = ExtResource("14_nmaxj")
 [connection signal="input_event" from="Area2D" to="." method="_on_area_2d_input_event"]
 [connection signal="button_down" from="Button11" to="." method="_on_button_11_button_down"]
 [connection signal="button_down" from="Button12" to="." method="_on_button_12_button_down"]
+[connection signal="button_down" from="Buttoncrushsymbal" to="." method="_on_buttoncrushsymbal_button_down"]
+[connection signal="button_down" from="Buttoncrushsymbal/Buttoncrushsymbal" to="." method="_on_buttoncrushsymbal_button_down"]
+[connection signal="button_down" from="Buttonclay" to="." method="_on_buttonclay_button_down"]
