@@ -1,4 +1,4 @@
-[gd_scene load_steps=28 format=3 uid="uid://5tyhlvidg3nl"]
+[gd_scene load_steps=30 format=3 uid="uid://5tyhlvidg3nl"]
 
 [ext_resource type="Texture2D" uid="uid://c46lx3fhe4wdi" path="res://Beginner Drum Kit_ Setting up the Drum Kit.jpg" id="1_6rm3y"]
 [ext_resource type="Script" path="res://drum_looper.gd" id="2_2t6h2"]
@@ -23,8 +23,10 @@
 [ext_resource type="AudioStream" uid="uid://bcpppp63mqtq1" path="res://Sak Noel - Loca People (What The Fuck) (Original Mix).mp3" id="21_wklcp"]
 [ext_resource type="AudioStream" uid="uid://dei1f0cd40vgc" path="res://Matteo Tura - I'M SELFISH.mp3" id="22_hhqhi"]
 [ext_resource type="Texture2D" uid="uid://cq73rwitvitco" path="res://plus.png" id="24_1su58"]
+[ext_resource type="Texture2D" uid="uid://dnlb2k301i0r6" path="res://drummm.png" id="25_c2rtm"]
 [ext_resource type="Texture2D" uid="uid://0wxucu44ydj" path="res://33.png" id="25_e3657"]
 [ext_resource type="Texture2D" uid="uid://ddbqpb2fbrwqd" path="res://55.png" id="25_qdvrx"]
+[ext_resource type="Texture2D" uid="uid://ck3w60ulceoy5" path="res://cly.png" id="26_oncea"]
 
 [sub_resource type="Environment" id="Environment_pepdv"]
 background_mode = 3
@@ -185,13 +187,6 @@ scale = Vector2(0.898703, 0.912944)
 texture = ExtResource("12_eup7h")
 offset = Vector2(-215.536, 136.266)
 
-[node name="Drum3" type="Sprite2D" parent="."]
-position = Vector2(-1, 51)
-rotation = 1.56544
-scale = Vector2(1.00493, 1.00956)
-texture = ExtResource("12_eup7h")
-offset = Vector2(201.071, 142.014)
-
 [node name="Drum2" type="Sprite2D" parent="."]
 position = Vector2(72, 127)
 rotation = 1.57127
@@ -209,8 +204,8 @@ offset = Vector2(-111.913, 66.5528)
 [node name="Button13" type="Button" parent="."]
 self_modulate = Color(1, 1, 1, 0.238)
 offset_left = -209.0
-offset_top = 184.0
-offset_right = -63.0
+offset_top = 188.0
+offset_right = -76.0
 offset_bottom = 319.0
 
 [node name="Ss4" type="Sprite2D" parent="."]
@@ -447,60 +442,6 @@ volume_db = 1.0
 [node name="floor tom" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("14_nmaxj")
 
-[node name="Mmm" type="Sprite2D" parent="."]
-position = Vector2(-107, 252)
-rotation = 1.56541
-scale = Vector2(0.0896983, 0.0827953)
-texture = ExtResource("16_1wxrd")
-
-[node name="Mmm2" type="Sprite2D" parent="."]
-position = Vector2(77, 191)
-rotation = 1.57042
-scale = Vector2(0.0553523, 0.0643554)
-texture = ExtResource("16_1wxrd")
-
-[node name="Mmm3" type="Sprite2D" parent="."]
-position = Vector2(53.5, 42.9987)
-rotation = 1.57346
-scale = Vector2(0.0575153, 0.0598907)
-texture = ExtResource("16_1wxrd")
-
-[node name="Mmm4" type="Sprite2D" parent="."]
-position = Vector2(-75.9995, -88.0032)
-rotation = 1.57171
-scale = Vector2(0.0590722, 0.0700682)
-texture = ExtResource("16_1wxrd")
-
-[node name="Mmm5" type="Sprite2D" parent="."]
-position = Vector2(-129, 70)
-rotation = 1.56967
-scale = Vector2(0.0960989, 0.101106)
-texture = ExtResource("16_1wxrd")
-
-[node name="Mmm6" type="Sprite2D" parent="."]
-position = Vector2(97, -144)
-rotation = 1.57018
-scale = Vector2(0.0666959, 0.0756872)
-texture = ExtResource("16_1wxrd")
-
-[node name="Mmm7" type="Sprite2D" parent="."]
-position = Vector2(70, 321)
-rotation = 1.57031
-scale = Vector2(0.0758443, 0.0823004)
-texture = ExtResource("16_1wxrd")
-
-[node name="Mmm8" type="Sprite2D" parent="."]
-position = Vector2(225, -36)
-rotation = 1.56603
-scale = Vector2(0.0682609, 0.0758275)
-texture = ExtResource("16_1wxrd")
-
-[node name="Mmm9" type="Sprite2D" parent="."]
-position = Vector2(277.988, 173.228)
-rotation = 1.564
-scale = Vector2(0.0673795, 0.0741213)
-texture = ExtResource("16_1wxrd")
-
 [node name="crush symbal" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("19_udwwn")
 volume_db = 8.588
@@ -596,6 +537,44 @@ position = Vector2(407.234, 553.392)
 scale = Vector2(0.413325, 0.587754)
 texture = ExtResource("24_1su58")
 
+[node name="Drummm3" type="Sprite2D" parent="34/34/34/34/34"]
+position = Vector2(-10802.4, -17821.6)
+rotation = -3.09665
+scale = Vector2(21.9943, 21.9888)
+skew = -0.01254
+texture = ExtResource("25_c2rtm")
+
+[node name="Drummm4" type="Sprite2D" parent="34/34/34/34/34"]
+position = Vector2(-7207.38, -9211.72)
+rotation = 3.13769
+scale = Vector2(10.6127, 10.6127)
+skew = 0.00117028
+texture = ExtResource("25_c2rtm")
+
+[node name="Cly" type="Sprite2D" parent="34/34/34/34/34"]
+position = Vector2(-2145.81, 1790.39)
+rotation = -4.71767
+scale = Vector2(5.89376, 4.66561)
+texture = ExtResource("26_oncea")
+
+[node name="Cly2" type="Sprite2D" parent="34/34/34/34/34"]
+position = Vector2(-2308.55, 564.847)
+rotation = 1.58003
+scale = Vector2(4.81679, 3.66435)
+texture = ExtResource("26_oncea")
+
+[node name="Cly3" type="Sprite2D" parent="34/34/34/34/34"]
+position = Vector2(-2957.96, 2492.32)
+rotation = 1.56866
+scale = Vector2(4.72932, 3.80328)
+texture = ExtResource("26_oncea")
+
+[node name="Cly4" type="Sprite2D" parent="34/34/34/34/34"]
+position = Vector2(-2809.12, -66.7764)
+rotation = 1.56995
+scale = Vector2(3.86386, 2.9262)
+texture = ExtResource("26_oncea")
+
 [node name="56" type="Sprite2D" parent="34"]
 self_modulate = Color(1.5, 1, 1, 1)
 position = Vector2(4.94019, 734.976)
@@ -644,6 +623,88 @@ position = Vector2(713.755, -93.3777)
 rotation = 1.57387
 scale = Vector2(0.676876, 0.194018)
 texture = ExtResource("25_e3657")
+
+[node name="Drummm" type="Sprite2D" parent="."]
+position = Vector2(-146, 254)
+rotation = 1.59688
+scale = Vector2(1.01816, 1.01675)
+skew = -0.0124952
+texture = ExtResource("25_c2rtm")
+
+[node name="Drummm2" type="Sprite2D" parent="."]
+position = Vector2(50.9999, 196)
+rotation = 1.56857
+scale = Vector2(0.717688, 0.69606)
+skew = 0.00106621
+texture = ExtResource("25_c2rtm")
+
+[node name="Drummm5" type="Sprite2D" parent="."]
+position = Vector2(33.8818, 45.313)
+rotation = 1.57455
+scale = Vector2(0.590758, 0.594125)
+skew = -0.0017972
+texture = ExtResource("25_c2rtm")
+
+[node name="Drummm6" type="Sprite2D" parent="."]
+position = Vector2(-109, -81)
+rotation = 1.56985
+scale = Vector2(0.889409, 0.911294)
+skew = 0.000453115
+texture = ExtResource("25_c2rtm")
+
+[node name="Mmm" type="Sprite2D" parent="."]
+position = Vector2(-107, 252)
+rotation = 1.56541
+scale = Vector2(0.0896983, 0.0827953)
+texture = ExtResource("16_1wxrd")
+
+[node name="Mmm2" type="Sprite2D" parent="."]
+position = Vector2(77, 191)
+rotation = 1.57042
+scale = Vector2(0.0553523, 0.0643554)
+texture = ExtResource("16_1wxrd")
+
+[node name="Mmm3" type="Sprite2D" parent="."]
+position = Vector2(53.5, 42.9987)
+rotation = 1.57346
+scale = Vector2(0.0575153, 0.0598907)
+texture = ExtResource("16_1wxrd")
+
+[node name="Mmm4" type="Sprite2D" parent="."]
+position = Vector2(-75.9995, -88.0032)
+rotation = 1.57171
+scale = Vector2(0.0590722, 0.0700682)
+texture = ExtResource("16_1wxrd")
+
+[node name="Mmm5" type="Sprite2D" parent="."]
+position = Vector2(-129, 70)
+rotation = 1.56967
+scale = Vector2(0.0960989, 0.101106)
+texture = ExtResource("16_1wxrd")
+
+[node name="Mmm6" type="Sprite2D" parent="."]
+position = Vector2(97, -144)
+rotation = 1.57018
+scale = Vector2(0.0666959, 0.0756872)
+texture = ExtResource("16_1wxrd")
+
+[node name="Mmm7" type="Sprite2D" parent="."]
+position = Vector2(70, 321)
+rotation = 1.57031
+scale = Vector2(0.0758443, 0.0823004)
+texture = ExtResource("16_1wxrd")
+
+[node name="Mmm8" type="Sprite2D" parent="."]
+position = Vector2(225, -36)
+rotation = 1.56603
+scale = Vector2(0.0682609, 0.0758275)
+texture = ExtResource("16_1wxrd")
+
+[node name="Mmm9" type="Sprite2D" parent="."]
+position = Vector2(277.988, 173.228)
+rotation = 1.564
+scale = Vector2(0.0673795, 0.0741213)
+texture = ExtResource("16_1wxrd")
 
 [node name="36" type="Sprite2D" parent="."]
 position = Vector2(730.627, -92.9749)
