@@ -22,7 +22,7 @@
 [ext_resource type="AudioStream" uid="uid://cj368hm46cifk" path="res://AETHYRIEN - Berserkr (The Henbane Experience).mp3" id="21_kgf0e"]
 [ext_resource type="AudioStream" uid="uid://bcpppp63mqtq1" path="res://Sak Noel - Loca People (What The Fuck) (Original Mix).mp3" id="21_wklcp"]
 [ext_resource type="AudioStream" uid="uid://dei1f0cd40vgc" path="res://Matteo Tura - I'M SELFISH.mp3" id="22_hhqhi"]
-[ext_resource type="Texture2D" uid="uid://ceh33eiln5x28" path="res://22.png" id="24_yfa4k"]
+[ext_resource type="Texture2D" uid="uid://cq73rwitvitco" path="res://plus.png" id="24_1su58"]
 [ext_resource type="Texture2D" uid="uid://0wxucu44ydj" path="res://33.png" id="25_e3657"]
 [ext_resource type="Texture2D" uid="uid://ddbqpb2fbrwqd" path="res://55.png" id="25_qdvrx"]
 
@@ -570,7 +570,7 @@ scale = Vector2(0.749395, 0.966229)
 texture = ExtResource("25_e3657")
 
 [node name="56" type="Sprite2D" parent="34/34/34/34/34"]
-self_modulate = Color(1.7, 1, 1, 1)
+self_modulate = Color(1.8, 1, 1, 1)
 position = Vector2(275.927, -12.3994)
 rotation = 1.5658
 scale = Vector2(3.63778, 0.787939)
@@ -589,6 +589,12 @@ position = Vector2(7.36235, 82.6973)
 rotation = 0.0204764
 scale = Vector2(0.666535, 0.841278)
 texture = ExtResource("25_qdvrx")
+
+[node name="Plus" type="Sprite2D" parent="34/34/34/34/34"]
+self_modulate = Color(1.8, 1, 1, 1)
+position = Vector2(407.234, 553.392)
+scale = Vector2(0.413325, 0.587754)
+texture = ExtResource("24_1su58")
 
 [node name="56" type="Sprite2D" parent="34"]
 self_modulate = Color(1.5, 1, 1, 1)
@@ -622,11 +628,6 @@ texture = ExtResource("25_qdvrx")
 [node name="loca people" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("21_wklcp")
 volume_db = 1.0
-
-[node name="22" type="Sprite2D" parent="."]
-position = Vector2(894.75, 10.375)
-scale = Vector2(0.101389, 0.103472)
-texture = ExtResource("24_yfa4k")
 
 [node name="33" type="Sprite2D" parent="."]
 position = Vector2(720, 14)
