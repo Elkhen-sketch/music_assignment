@@ -51,7 +51,7 @@ environment = SubResource("Environment_pepdv")
 position = Vector2(-38.5936, -54.5805)
 rotation = -0.00159953
 stream = ExtResource("3_w751x")
-volume_db = 1.0
+volume_db = 10.0
 
 [node name="Node2D" type="Node2D" parent="."]
 position = Vector2(-38.5936, -54.5805)
@@ -437,7 +437,7 @@ alignment = 0
 
 [node name="sinfull" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("15_a2w4l")
-volume_db = 1.0
+volume_db = 10.0
 
 [node name="floor tom" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("14_nmaxj")
@@ -474,11 +474,11 @@ offset_bottom = 426.0
 
 [node name="berserkrD" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("21_kgf0e")
-volume_db = 1.0
+volume_db = 10.0
 
 [node name="selfishD" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("22_hhqhi")
-volume_db = 1.0
+volume_db = 10.0
 
 [node name="34" type="Sprite2D" parent="."]
 position = Vector2(778, -157)
@@ -606,7 +606,7 @@ texture = ExtResource("25_qdvrx")
 
 [node name="loca people" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("21_wklcp")
-volume_db = 1.0
+volume_db = 10.0
 
 [node name="33" type="Sprite2D" parent="."]
 position = Vector2(720, 14)
