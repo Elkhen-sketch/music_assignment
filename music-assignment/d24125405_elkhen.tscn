@@ -1,4 +1,4 @@
-[gd_scene load_steps=26 format=3 uid="uid://5tyhlvidg3nl"]
+[gd_scene load_steps=28 format=3 uid="uid://5tyhlvidg3nl"]
 
 [ext_resource type="Texture2D" uid="uid://c46lx3fhe4wdi" path="res://Beginner Drum Kit_ Setting up the Drum Kit.jpg" id="1_6rm3y"]
 [ext_resource type="Script" path="res://drum_looper.gd" id="2_2t6h2"]
@@ -23,6 +23,8 @@
 [ext_resource type="AudioStream" uid="uid://cj368hm46cifk" path="res://AETHYRIEN - Berserkr (The Henbane Experience).mp3" id="21_kgf0e"]
 [ext_resource type="AudioStream" uid="uid://bcpppp63mqtq1" path="res://Sak Noel - Loca People (What The Fuck) (Original Mix).mp3" id="21_wklcp"]
 [ext_resource type="AudioStream" uid="uid://dei1f0cd40vgc" path="res://Matteo Tura - I'M SELFISH.mp3" id="22_hhqhi"]
+[ext_resource type="Texture2D" uid="uid://ceh33eiln5x28" path="res://22.png" id="24_yfa4k"]
+[ext_resource type="Texture2D" uid="uid://0wxucu44ydj" path="res://33.png" id="25_e3657"]
 
 [sub_resource type="Environment" id="Environment_pepdv"]
 background_mode = 3
@@ -30,14 +32,15 @@ glow_enabled = true
 glow_blend_mode = 1
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_l1eky"]
-size = Vector2(209.625, 189.005)
+size = Vector2(169.715, 162.11)
 
 [node name="Drum" type="Sprite2D"]
 position = Vector2(202, 202)
 texture = ExtResource("1_6rm3y")
 script = ExtResource("2_2t6h2")
 metadata/_edit_lock_ = true
-metadata/_edit_horizontal_guides_ = [-13.0]
+metadata/_edit_horizontal_guides_ = [-13.0, 227.0]
+metadata/_edit_vertical_guides_ = [1111.0]
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource("Environment_pepdv")
@@ -280,10 +283,10 @@ pivot_offset = Vector2(-15.3444, 32.927)
 [node name="Button7" type="Button" parent="."]
 modulate = Color(1, 0, 0.0235294, 1)
 self_modulate = Color(2.5, 1, 1, 1)
-offset_left = 610.0
-offset_top = -127.0
-offset_right = 679.0
-offset_bottom = -96.0
+offset_left = 627.0
+offset_top = -126.0
+offset_right = 696.0
+offset_bottom = -95.0
 text = "Play"
 
 [node name="Button8" type="Button" parent="."]
@@ -301,7 +304,7 @@ position = Vector2(-21, -99.7638)
 rotation = -0.00159953
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
-position = Vector2(816.945, 28.5666)
+position = Vector2(813.989, 16.1466)
 shape = SubResource("RectangleShape2D_l1eky")
 
 [node name="ColorRect" type="ColorRect" parent="Area2D"]
@@ -315,8 +318,8 @@ mouse_filter = 2
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="Area2D"]
 
 [node name="Icon" type="Sprite2D" parent="."]
-position = Vector2(795, -72)
-scale = Vector2(1.625, 1.45313)
+position = Vector2(790.25, -90.5)
+scale = Vector2(1.27734, 1.16406)
 texture = ExtResource("8_edtqp")
 
 [node name="Button11" type="Button" parent="."]
@@ -331,10 +334,10 @@ pivot_offset = Vector2(114.422, 179.135)
 modulate = Color(1, 0, 0.0235294, 1)
 self_modulate = Color(1.5, 2, 2, 1)
 light_mask = 0
-offset_left = 391.0
-offset_top = -87.0
-offset_right = 599.0
-offset_bottom = -56.0
+offset_left = 408.0
+offset_top = -86.0
+offset_right = 621.0
+offset_bottom = -55.0
 text = "Call Me Sleeper - SINFULL  "
 alignment = 0
 
@@ -342,79 +345,102 @@ alignment = 0
 modulate = Color(1, 0, 0.0235294, 1)
 self_modulate = Color(1.5, 2, 2, 1)
 light_mask = 0
-offset_left = 390.0
-offset_top = -47.0
-offset_right = 604.0
-offset_bottom = -16.0
+offset_left = 407.0
+offset_top = -46.0
+offset_right = 621.0
+offset_bottom = -15.0
 text = "Matteo Tura - I'M SELFISH  "
 alignment = 0
 
 [node name="Button17" type="Button" parent="."]
 modulate = Color(1, 0, 0.0235294, 1)
 self_modulate = Color(2.5, 1, 1, 1)
-offset_left = 610.0
-offset_top = -167.0
-offset_right = 679.0
-offset_bottom = -136.0
+offset_left = 627.0
+offset_top = -166.0
+offset_right = 696.0
+offset_bottom = -135.0
 text = "Play"
 
 [node name="Button16" type="Button" parent="."]
 modulate = Color(1, 0, 0.0235294, 1)
 self_modulate = Color(2.5, 1, 1, 1)
-offset_left = 611.0
-offset_top = -7.0
-offset_right = 680.0
-offset_bottom = 24.0
+offset_left = 628.0
+offset_top = -6.0
+offset_right = 697.0
+offset_bottom = 25.0
 text = "Play"
 
 [node name="Button15" type="Button" parent="."]
 modulate = Color(1, 0, 0.0235294, 1)
 self_modulate = Color(2.5, 1, 1, 1)
-offset_left = 611.0
-offset_top = -47.0
-offset_right = 680.0
-offset_bottom = -16.0
+offset_left = 628.0
+offset_top = -46.0
+offset_right = 697.0
+offset_bottom = -15.0
 text = "Play"
 
 [node name="Button12" type="Button" parent="."]
 modulate = Color(1, 0, 0.0235294, 1)
 self_modulate = Color(2.5, 1, 1, 1)
-offset_left = 611.0
-offset_top = -86.0
-offset_right = 680.0
-offset_bottom = -55.0
+offset_left = 628.0
+offset_top = -85.0
+offset_right = 697.0
+offset_bottom = -54.0
 text = "Play"
 
 [node name="Button14" type="Button" parent="."]
 modulate = Color(1, 0, 0.0235294, 1)
 self_modulate = Color(1.5, 2, 2, 1)
 light_mask = 0
-offset_left = 391.0
-offset_top = -167.0
-offset_right = 602.0
-offset_bottom = -136.0
+offset_left = 408.0
+offset_top = -166.0
+offset_right = 619.0
+offset_bottom = -135.0
 text = "Sak Noel - Loca People"
 alignment = 0
+
+[node name="Button18" type="Button" parent="."]
+modulate = Color(0.333333, 0, 0, 1)
+self_modulate = Color(1.5, 2, 2, 1)
+light_mask = 0
+offset_left = 913.0
+offset_top = -120.0
+offset_right = 995.0
+offset_bottom = -89.0
+rotation = 1.57548
+text = "Volume"
+flat = true
 
 [node name="Button10" type="Button" parent="."]
 modulate = Color(1, 0, 0.0235294, 1)
 self_modulate = Color(1.5, 2, 2, 1)
 light_mask = 0
-offset_left = 390.0
-offset_top = -7.0
-offset_right = 604.0
-offset_bottom = 24.0
+offset_left = 407.0
+offset_top = -6.0
+offset_right = 621.0
+offset_bottom = 25.0
 text = "AETHYRIEN - Berserkr"
 alignment = 0
+
+[node name="Button10" type="Button" parent="Button10"]
+modulate = Color(0.333333, 0, 0, 1)
+self_modulate = Color(1.5, 2, 2, 1)
+light_mask = 0
+offset_left = 361.0
+offset_top = 1.0
+offset_right = 443.0
+offset_bottom = 32.0
+text = "Speed"
+flat = true
 
 [node name="Button" type="Button" parent="."]
 modulate = Color(1, 0, 0.0235294, 1)
 self_modulate = Color(1.5, 2, 2, 1)
 light_mask = 0
-offset_left = 391.0
-offset_top = -127.0
-offset_right = 603.0
-offset_bottom = -96.0
+offset_left = 408.0
+offset_top = -126.0
+offset_right = 620.0
+offset_bottom = -95.0
 text = "Demeter: HUSTLER   "
 alignment = 0
 
@@ -520,6 +546,21 @@ volume_db = 1.0
 [node name="loca people" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("21_wklcp")
 volume_db = 1.0
+
+[node name="22" type="Sprite2D" parent="."]
+position = Vector2(894.75, 10.375)
+scale = Vector2(0.101389, 0.103472)
+texture = ExtResource("24_yfa4k")
+
+[node name="33" type="Sprite2D" parent="."]
+position = Vector2(720, 14)
+scale = Vector2(0.15, 0.165972)
+texture = ExtResource("25_e3657")
+
+[node name="33" type="Sprite2D" parent="33"]
+position = Vector2(1146.67, -994.14)
+scale = Vector2(1.01944, 1.04238)
+texture = ExtResource("25_e3657")
 
 [connection signal="mouse_entered" from="HSlider" to="." method="_on_h_slider_mouse_entered"]
 [connection signal="button_down" from="Button13" to="." method="_on_button_13_button_down"]
