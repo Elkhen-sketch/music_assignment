@@ -1,4 +1,4 @@
-[gd_scene load_steps=18 format=3 uid="uid://5tyhlvidg3nl"]
+[gd_scene load_steps=17 format=3 uid="uid://5tyhlvidg3nl"]
 
 [ext_resource type="Texture2D" uid="uid://c46lx3fhe4wdi" path="res://Beginner Drum Kit_ Setting up the Drum Kit.jpg" id="1_6rm3y"]
 [ext_resource type="Script" path="res://drum_looper.gd" id="2_2t6h2"]
@@ -19,9 +19,6 @@
 background_mode = 3
 glow_enabled = true
 glow_blend_mode = 1
-
-[sub_resource type="CircleShape2D" id="CircleShape2D_nuejn"]
-radius = 113.442
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_l1eky"]
 size = Vector2(209.625, 127.125)
@@ -89,6 +86,7 @@ texture = ExtResource("11_j5gar")
 offset = Vector2(-46.782, 70.5328)
 
 [node name="Untitled-2" type="Sprite2D" parent="."]
+self_modulate = Color(3, 2, 2, 1)
 position = Vector2(126, -202)
 rotation = -0.00159953
 scale = Vector2(0.91055, 0.902074)
@@ -96,20 +94,23 @@ texture = ExtResource("10_22uxr")
 offset = Vector2(-212.95, 133.846)
 
 [node name="Untitled-5" type="Sprite2D" parent="."]
-position = Vector2(83.1727, 81.1538)
+self_modulate = Color(3, 2, 2, 1)
+position = Vector2(85.1727, 80.1538)
 rotation = 1.56661
 scale = Vector2(0.663262, 0.669712)
 texture = ExtResource("10_22uxr")
 offset = Vector2(-288.459, -83.0111)
 
 [node name="Untitled-3" type="Sprite2D" parent="."]
-position = Vector2(43.8839, 39.3394)
+self_modulate = Color(3, 2, 2, 1)
+position = Vector2(49, 51)
 rotation = 1.56614
 scale = Vector2(0.821674, 0.849654)
 texture = ExtResource("10_22uxr")
 offset = Vector2(380.647, -28.5565)
 
 [node name="Untitled-6" type="Sprite2D" parent="."]
+self_modulate = Color(3, 2, 2, 1)
 position = Vector2(112.939, 112.682)
 rotation = 1.57727
 scale = Vector2(0.62844, 0.612903)
@@ -117,14 +118,15 @@ texture = ExtResource("10_22uxr")
 offset = Vector2(-108.634, 62.7169)
 
 [node name="Untitled-7" type="Sprite2D" parent="."]
-self_modulate = Color(2, 2, 2, 1)
-position = Vector2(650, 108)
+self_modulate = Color(3, 2, 2, 1)
+position = Vector2(152.161, 111.754)
 rotation = 1.57392
-scale = Vector2(1.05505, 1.06889)
+scale = Vector2(0.9974, 1.02226)
 texture = ExtResource("10_22uxr")
 offset = Vector2(134.144, -138.228)
 
 [node name="Untitled-9" type="Sprite2D" parent="."]
+self_modulate = Color(3, 2, 2, 1)
 position = Vector2(90, 127.236)
 rotation = 1.59951
 scale = Vector2(0.188073, 0.642699)
@@ -132,13 +134,15 @@ texture = ExtResource("10_22uxr")
 offset = Vector2(-276.035, 188.365)
 
 [node name="Untitled-8" type="Sprite2D" parent="."]
-position = Vector2(111.14, 132.638)
+self_modulate = Color(3, 2, 2, 1)
+position = Vector2(113.14, 132.638)
 rotation = 1.57127
 scale = Vector2(0.699368, 0.704666)
 texture = ExtResource("10_22uxr")
 offset = Vector2(99.0306, 29.2554)
 
 [node name="Untitled-4" type="Sprite2D" parent="."]
+self_modulate = Color(3, 2, 2, 1)
 position = Vector2(122.142, 93.3183)
 rotation = 1.57325
 scale = Vector2(0.844037, 0.797868)
@@ -146,6 +150,7 @@ texture = ExtResource("10_22uxr")
 offset = Vector2(-78.7536, -186.108)
 
 [node name="Untitled-1" type="Sprite2D" parent="."]
+self_modulate = Color(3, 2, 2, 1)
 position = Vector2(45.3715, 55.9917)
 rotation = 1.56544
 texture = ExtResource("10_22uxr")
@@ -180,17 +185,11 @@ texture = ExtResource("12_eup7h")
 offset = Vector2(-111.913, 66.5528)
 
 [node name="Ss4" type="Sprite2D" parent="."]
-position = Vector2(43.8839, 39.3394)
+position = Vector2(48, 53)
 rotation = 1.56614
 scale = Vector2(0.882468, 0.953588)
 texture = ExtResource("13_ktw0o")
 offset = Vector2(353.115, -24.8777)
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-self_modulate = Color(1.5, 1, 1, 1)
-position = Vector2(294, 249)
-shape = SubResource("CircleShape2D_nuejn")
-debug_color = Color(1, 0, 0.0235294, 1)
 
 [node name="Ss3" type="Sprite2D" parent="."]
 position = Vector2(147.025, 103.373)
