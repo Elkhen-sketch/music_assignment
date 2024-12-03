@@ -250,6 +250,7 @@ pivot_offset = Vector2(-15.3444, 32.927)
 
 [node name="Button7" type="Button" parent="."]
 modulate = Color(1, 0, 0.0235294, 1)
+self_modulate = Color(2.5, 1, 1, 1)
 offset_left = 610.0
 offset_top = -127.0
 offset_right = 679.0
@@ -305,6 +306,7 @@ pivot_offset = Vector2(114.422, 179.135)
 
 [node name="Button" type="Button" parent="."]
 modulate = Color(1, 0, 0.0235294, 1)
+self_modulate = Color(1.5, 2, 2, 1)
 light_mask = 0
 offset_left = 391.0
 offset_top = -127.0
@@ -315,12 +317,13 @@ alignment = 0
 
 [node name="Button" type="Button" parent="Button"]
 modulate = Color(1, 0, 0.0235294, 1)
+self_modulate = Color(1.5, 2, 2, 1)
 light_mask = 0
 layout_mode = 0
 offset_top = 40.0
 offset_right = 208.0
 offset_bottom = 71.0
-text = "Call me sleeper - SINFUL   "
+text = "Call Me Sleeper - SINFUL   "
 alignment = 0
 
 [connection signal="mouse_entered" from="HSlider" to="." method="_on_h_slider_mouse_entered"]
