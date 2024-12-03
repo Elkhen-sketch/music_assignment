@@ -95,9 +95,9 @@ offset = Vector2(-212.95, 133.846)
 
 [node name="Untitled-5" type="Sprite2D" parent="."]
 self_modulate = Color(3, 2, 2, 1)
-position = Vector2(85.1727, 80.1538)
+position = Vector2(85.4693, 80.1526)
 rotation = 1.56661
-scale = Vector2(0.663262, 0.669712)
+scale = Vector2(0.663262, 0.681348)
 texture = ExtResource("10_22uxr")
 offset = Vector2(-288.459, -83.0111)
 
@@ -111,17 +111,17 @@ offset = Vector2(380.647, -28.5565)
 
 [node name="Untitled-6" type="Sprite2D" parent="."]
 self_modulate = Color(3, 2, 2, 1)
-position = Vector2(112.939, 112.682)
+position = Vector2(114.007, 112.695)
 rotation = 1.57727
-scale = Vector2(0.62844, 0.612903)
+scale = Vector2(0.611252, 0.589566)
 texture = ExtResource("10_22uxr")
 offset = Vector2(-108.634, 62.7169)
 
 [node name="Untitled-7" type="Sprite2D" parent="."]
 self_modulate = Color(3, 2, 2, 1)
-position = Vector2(152.161, 111.754)
+position = Vector2(150.23, 110.201)
 rotation = 1.57392
-scale = Vector2(0.9974, 1.02226)
+scale = Vector2(1.00894, 1.04541)
 texture = ExtResource("10_22uxr")
 offset = Vector2(134.144, -138.228)
 
@@ -135,7 +135,7 @@ offset = Vector2(-276.035, 188.365)
 
 [node name="Untitled-8" type="Sprite2D" parent="."]
 self_modulate = Color(3, 2, 2, 1)
-position = Vector2(113.14, 132.638)
+position = Vector2(113, 125)
 rotation = 1.57127
 scale = Vector2(0.699368, 0.704666)
 texture = ExtResource("10_22uxr")
@@ -143,35 +143,35 @@ offset = Vector2(99.0306, 29.2554)
 
 [node name="Untitled-4" type="Sprite2D" parent="."]
 self_modulate = Color(3, 2, 2, 1)
-position = Vector2(122.142, 93.3183)
+position = Vector2(114.849, 93.3004)
 rotation = 1.57325
-scale = Vector2(0.844037, 0.797868)
+scale = Vector2(0.844037, 0.826898)
 texture = ExtResource("10_22uxr")
 offset = Vector2(-78.7536, -186.108)
 
 [node name="Untitled-1" type="Sprite2D" parent="."]
 self_modulate = Color(3, 2, 2, 1)
-position = Vector2(45.3715, 55.9917)
+position = Vector2(40, 51)
 rotation = 1.56544
 texture = ExtResource("10_22uxr")
 offset = Vector2(202.064, 142.372)
 
 [node name="Drum4" type="Sprite2D" parent="."]
-position = Vector2(46, 114)
+position = Vector2(46, 118)
 rotation = 1.59635
 scale = Vector2(0.899441, 0.882812)
 texture = ExtResource("12_eup7h")
 offset = Vector2(-215.536, 136.266)
 
 [node name="Drum3" type="Sprite2D" parent="."]
-position = Vector2(43, 57)
+position = Vector2(39, 51)
 rotation = 1.56544
 scale = Vector2(1.00493, 1.00956)
 texture = ExtResource("12_eup7h")
 offset = Vector2(201.071, 142.014)
 
 [node name="Drum2" type="Sprite2D" parent="."]
-position = Vector2(112.141, 134.638)
+position = Vector2(112, 127)
 rotation = 1.57127
 scale = Vector2(0.704839, 0.70539)
 texture = ExtResource("12_eup7h")
@@ -232,19 +232,19 @@ pivot_offset = Vector2(107.707, 1.12375)
 
 [node name="Button10" type="Button" parent="."]
 self_modulate = Color(1, 1, 1, 0.0392157)
-offset_left = 187.371
-offset_top = 132.992
-offset_right = 314.371
-offset_bottom = 265.992
+offset_left = 177.0
+offset_top = 122.0
+offset_right = 304.0
+offset_bottom = 255.0
 rotation = 1.56544
 pivot_offset = Vector2(-141.176, -72.2744)
 
 [node name="Button3" type="Button" parent="."]
 self_modulate = Color(1, 1, 1, 0.0392157)
-offset_left = 127.14
-offset_top = 100.638
-offset_right = 230.14
-offset_bottom = 204.638
+offset_left = 125.0
+offset_top = 100.0
+offset_right = 228.0
+offset_bottom = 204.0
 rotation = 1.57127
 pivot_offset = Vector2(-15.3444, 32.927)
 
