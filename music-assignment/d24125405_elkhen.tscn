@@ -34,41 +34,41 @@ metadata/_edit_horizontal_guides_ = [-13.0]
 environment = SubResource("Environment_pepdv")
 
 [node name="harmony" type="AudioStreamPlayer2D" parent="."]
-position = Vector2(1.40637, -54.5805)
+position = Vector2(-38.5936, -54.5805)
 rotation = -0.00159953
 stream = ExtResource("3_w751x")
-volume_db = 10.642
+volume_db = -10.349
 
 [node name="Node2D" type="Node2D" parent="."]
-position = Vector2(1.40637, -54.5805)
+position = Vector2(-38.5936, -54.5805)
 rotation = -0.00159953
 script = ExtResource("2_2t6h2")
 
 [node name="mediumtom" type="AudioStreamPlayer2D" parent="."]
-position = Vector2(1.40637, -54.5805)
+position = Vector2(-38.5936, -54.5805)
 rotation = -0.00159953
 stream = ExtResource("4_hbkad")
 
 [node name="HSlider" type="HSlider" parent="."]
-offset_left = 1.69276
+offset_left = -38.3072
 offset_top = -54.7637
-offset_right = 9.69276
+offset_right = -30.3072
 offset_bottom = -38.7637
 rotation = -0.00159953
 pivot_offset = Vector2(114.422, 179.135)
 
 [node name="snare drum" type="AudioStreamPlayer2D" parent="."]
-position = Vector2(1.40637, -54.5805)
+position = Vector2(-38.5936, -54.5805)
 rotation = -0.00159953
 stream = ExtResource("5_x4n78")
 
 [node name="small tom" type="AudioStreamPlayer2D" parent="."]
-position = Vector2(1.40637, -54.5805)
+position = Vector2(-38.5936, -54.5805)
 rotation = -0.00159953
 stream = ExtResource("6_0prsp")
 
 [node name="bass drum" type="AudioStreamPlayer2D" parent="."]
-position = Vector2(1.40637, -54.5805)
+position = Vector2(-38.5936, -54.5805)
 rotation = -0.00159953
 stream = ExtResource("7_u3d4o")
 
@@ -78,8 +78,16 @@ scale = Vector2(0.887692, 0.646)
 texture = ExtResource("9_thmgi")
 metadata/_edit_lock_ = true
 
+[node name="Untitled-9" type="Sprite2D" parent="."]
+self_modulate = Color(4, 2, 2, 1)
+position = Vector2(55, 129)
+rotation = 1.59951
+scale = Vector2(0.188073, 0.642699)
+texture = ExtResource("10_22uxr")
+offset = Vector2(-276.035, 188.365)
+
 [node name="FloorDrum" type="Sprite2D" parent="."]
-position = Vector2(112, 123.236)
+position = Vector2(72, 123.236)
 rotation = 1.56525
 scale = Vector2(1.0168, 0.999984)
 texture = ExtResource("11_j5gar")
@@ -87,7 +95,7 @@ offset = Vector2(-46.782, 70.5328)
 
 [node name="Untitled-2" type="Sprite2D" parent="."]
 self_modulate = Color(3, 2, 2, 1)
-position = Vector2(126, -202)
+position = Vector2(86, -202)
 rotation = -0.00159953
 scale = Vector2(0.91055, 0.902074)
 texture = ExtResource("10_22uxr")
@@ -95,7 +103,7 @@ offset = Vector2(-212.95, 133.846)
 
 [node name="Untitled-5" type="Sprite2D" parent="."]
 self_modulate = Color(3, 2, 2, 1)
-position = Vector2(85.4693, 80.1526)
+position = Vector2(17.7557, 83.1634)
 rotation = 1.56661
 scale = Vector2(0.663262, 0.681348)
 texture = ExtResource("10_22uxr")
@@ -103,7 +111,7 @@ offset = Vector2(-288.459, -83.0111)
 
 [node name="Untitled-3" type="Sprite2D" parent="."]
 self_modulate = Color(3, 2, 2, 1)
-position = Vector2(49, 51)
+position = Vector2(9, 51)
 rotation = 1.56614
 scale = Vector2(0.821674, 0.849654)
 texture = ExtResource("10_22uxr")
@@ -111,7 +119,7 @@ offset = Vector2(380.647, -28.5565)
 
 [node name="Untitled-6" type="Sprite2D" parent="."]
 self_modulate = Color(3, 2, 2, 1)
-position = Vector2(114.007, 112.695)
+position = Vector2(74.007, 112.695)
 rotation = 1.57727
 scale = Vector2(0.611252, 0.589566)
 texture = ExtResource("10_22uxr")
@@ -119,23 +127,15 @@ offset = Vector2(-108.634, 62.7169)
 
 [node name="Untitled-7" type="Sprite2D" parent="."]
 self_modulate = Color(3, 2, 2, 1)
-position = Vector2(150.23, 110.201)
+position = Vector2(98.6885, 98.5343)
 rotation = 1.57392
 scale = Vector2(1.00894, 1.04541)
 texture = ExtResource("10_22uxr")
 offset = Vector2(134.144, -138.228)
 
-[node name="Untitled-9" type="Sprite2D" parent="."]
-self_modulate = Color(3, 2, 2, 1)
-position = Vector2(90, 127.236)
-rotation = 1.59951
-scale = Vector2(0.188073, 0.642699)
-texture = ExtResource("10_22uxr")
-offset = Vector2(-276.035, 188.365)
-
 [node name="Untitled-8" type="Sprite2D" parent="."]
 self_modulate = Color(3, 2, 2, 1)
-position = Vector2(113, 125)
+position = Vector2(73, 125)
 rotation = 1.57127
 scale = Vector2(0.699368, 0.704666)
 texture = ExtResource("10_22uxr")
@@ -143,7 +143,7 @@ offset = Vector2(99.0306, 29.2554)
 
 [node name="Untitled-4" type="Sprite2D" parent="."]
 self_modulate = Color(3, 2, 2, 1)
-position = Vector2(114.849, 93.3004)
+position = Vector2(45.8889, 75.313)
 rotation = 1.57325
 scale = Vector2(0.844037, 0.826898)
 texture = ExtResource("10_22uxr")
@@ -151,62 +151,62 @@ offset = Vector2(-78.7536, -186.108)
 
 [node name="Untitled-1" type="Sprite2D" parent="."]
 self_modulate = Color(3, 2, 2, 1)
-position = Vector2(40, 51)
+position = Vector2(-1.52588e-05, 51)
 rotation = 1.56544
 texture = ExtResource("10_22uxr")
 offset = Vector2(202.064, 142.372)
 
 [node name="Drum4" type="Sprite2D" parent="."]
-position = Vector2(46, 118)
+position = Vector2(9, 114)
 rotation = 1.59635
-scale = Vector2(0.899441, 0.882812)
+scale = Vector2(0.898703, 0.912944)
 texture = ExtResource("12_eup7h")
 offset = Vector2(-215.536, 136.266)
 
 [node name="Drum3" type="Sprite2D" parent="."]
-position = Vector2(39, 51)
+position = Vector2(-1, 51)
 rotation = 1.56544
 scale = Vector2(1.00493, 1.00956)
 texture = ExtResource("12_eup7h")
 offset = Vector2(201.071, 142.014)
 
 [node name="Drum2" type="Sprite2D" parent="."]
-position = Vector2(112, 127)
+position = Vector2(72, 127)
 rotation = 1.57127
 scale = Vector2(0.704839, 0.70539)
 texture = ExtResource("12_eup7h")
 offset = Vector2(95.7242, 29.7729)
 
 [node name="Drum" type="Sprite2D" parent="."]
-position = Vector2(112.939, 114.682)
+position = Vector2(72.939, 114.682)
 rotation = 1.57727
 scale = Vector2(0.607798, 0.58134)
 texture = ExtResource("12_eup7h")
 offset = Vector2(-111.913, 66.5528)
 
 [node name="Ss4" type="Sprite2D" parent="."]
-position = Vector2(48, 53)
+position = Vector2(8, 53)
 rotation = 1.56614
 scale = Vector2(0.882468, 0.953588)
 texture = ExtResource("13_ktw0o")
 offset = Vector2(353.115, -24.8777)
 
 [node name="Ss3" type="Sprite2D" parent="."]
-position = Vector2(147.025, 103.373)
+position = Vector2(95.4835, 91.7063)
 rotation = 1.57392
 scale = Vector2(1.09386, 1.17455)
 texture = ExtResource("13_ktw0o")
 offset = Vector2(129.391, -124.019)
 
 [node name="Ss2" type="Sprite2D" parent="."]
-position = Vector2(122, 93)
+position = Vector2(53.0399, 75.0127)
 rotation = 1.57325
 scale = Vector2(0.884013, 0.903599)
 texture = ExtResource("13_ktw0o")
 offset = Vector2(-76.3278, -161.642)
 
 [node name="Ss" type="Sprite2D" parent="."]
-position = Vector2(85.1727, 81.1538)
+position = Vector2(17.4591, 84.1646)
 rotation = 1.56661
 scale = Vector2(0.703125, 0.733696)
 texture = ExtResource("13_ktw0o")
@@ -214,36 +214,36 @@ offset = Vector2(-275.371, -75.2385)
 
 [node name="Button9" type="Button" parent="."]
 self_modulate = Color(1, 1, 1, 0.0392157)
-offset_left = 50.0
+offset_left = 10.0
 offset_top = 235.236
-offset_right = 85.0
+offset_right = 45.0
 offset_bottom = 313.236
 rotation = 1.56412
 pivot_offset = Vector2(69.8922, -114.937)
 
 [node name="Button5" type="Button" parent="."]
 self_modulate = Color(1, 1, 1, 0.0392157)
-offset_left = 7.9386
+offset_left = -32.0614
 offset_top = 114.682
-offset_right = 85.9386
+offset_right = 45.9386
 offset_bottom = 195.682
 rotation = 1.57727
 pivot_offset = Vector2(107.707, 1.12375)
 
 [node name="Button10" type="Button" parent="."]
 self_modulate = Color(1, 1, 1, 0.0392157)
-offset_left = 177.0
+offset_left = 137.0
 offset_top = 122.0
-offset_right = 304.0
+offset_right = 264.0
 offset_bottom = 255.0
 rotation = 1.56544
 pivot_offset = Vector2(-141.176, -72.2744)
 
 [node name="Button3" type="Button" parent="."]
 self_modulate = Color(1, 1, 1, 0.0392157)
-offset_left = 125.0
+offset_left = 85.0
 offset_top = 100.0
-offset_right = 228.0
+offset_right = 188.0
 offset_bottom = 204.0
 rotation = 1.57127
 pivot_offset = Vector2(-15.3444, 32.927)
@@ -259,20 +259,20 @@ text = "Play"
 
 [node name="Button8" type="Button" parent="."]
 self_modulate = Color(1, 1, 0.184314, 0.113725)
-offset_left = -134.0
+offset_left = -174.0
 offset_top = -159.0
-offset_right = -15.0
+offset_right = -55.0
 offset_bottom = -35.0
 rotation = -0.0443469
 pivot_offset = Vector2(255.794, -53.6394)
 size_flags_stretch_ratio = 0.0
 
 [node name="Area2D" type="Area2D" parent="."]
-position = Vector2(19, -99.7638)
+position = Vector2(-21, -99.7638)
 rotation = -0.00159953
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
-position = Vector2(779.951, 31.0114)
+position = Vector2(816.945, 35.0706)
 shape = SubResource("RectangleShape2D_l1eky")
 
 [node name="ColorRect" type="ColorRect" parent="Area2D"]
@@ -291,16 +291,16 @@ scale = Vector2(1.625, 0.921875)
 texture = ExtResource("8_edtqp")
 
 [node name="floortom" type="AudioStreamPlayer2D" parent="."]
-position = Vector2(18, -45.7638)
+position = Vector2(-22, -45.7638)
 rotation = -0.00159953
 stream = ExtResource("14_nmaxj")
 volume_db = 1.0
 
 [node name="Button11" type="Button" parent="."]
-offset_left = 53.0
-offset_top = -72.7638
-offset_right = 61.0
-offset_bottom = -64.7638
+offset_left = -14.7136
+offset_top = -69.753
+offset_right = -6.71362
+offset_bottom = -61.753
 rotation = -0.00159953
 pivot_offset = Vector2(114.422, 179.135)
 
