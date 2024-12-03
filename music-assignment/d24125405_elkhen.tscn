@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=3 uid="uid://5tyhlvidg3nl"]
+[gd_scene load_steps=18 format=3 uid="uid://5tyhlvidg3nl"]
 
 [ext_resource type="Texture2D" uid="uid://c46lx3fhe4wdi" path="res://Beginner Drum Kit_ Setting up the Drum Kit.jpg" id="1_6rm3y"]
 [ext_resource type="Script" path="res://drum_looper.gd" id="2_2t6h2"]
@@ -15,6 +15,14 @@
 [ext_resource type="Texture2D" uid="uid://gkgkbfu6fdna" path="res://ss.png" id="13_ktw0o"]
 [ext_resource type="AudioStream" uid="uid://bi776eftdvjxd" path="res://floor-tom-2-87286.mp3" id="14_nmaxj"]
 
+[sub_resource type="Environment" id="Environment_pepdv"]
+background_mode = 3
+glow_enabled = true
+glow_blend_mode = 1
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_nuejn"]
+radius = 113.442
+
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_l1eky"]
 size = Vector2(209.625, 127.125)
 
@@ -24,6 +32,9 @@ texture = ExtResource("1_6rm3y")
 script = ExtResource("2_2t6h2")
 metadata/_edit_lock_ = true
 metadata/_edit_horizontal_guides_ = [-13.0]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_pepdv")
 
 [node name="harmony" type="AudioStreamPlayer2D" parent="."]
 position = Vector2(1.40637, -54.5805)
@@ -106,7 +117,8 @@ texture = ExtResource("10_22uxr")
 offset = Vector2(-108.634, 62.7169)
 
 [node name="Untitled-7" type="Sprite2D" parent="."]
-position = Vector2(147.025, 103.373)
+self_modulate = Color(2, 2, 2, 1)
+position = Vector2(650, 108)
 rotation = 1.57392
 scale = Vector2(1.05505, 1.06889)
 texture = ExtResource("10_22uxr")
@@ -173,6 +185,12 @@ rotation = 1.56614
 scale = Vector2(0.882468, 0.953588)
 texture = ExtResource("13_ktw0o")
 offset = Vector2(353.115, -24.8777)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+self_modulate = Color(1.5, 1, 1, 1)
+position = Vector2(294, 249)
+shape = SubResource("CircleShape2D_nuejn")
+debug_color = Color(1, 0, 0.0235294, 1)
 
 [node name="Ss3" type="Sprite2D" parent="."]
 position = Vector2(147.025, 103.373)
@@ -286,16 +304,25 @@ offset_bottom = -64.7638
 rotation = -0.00159953
 pivot_offset = Vector2(114.422, 179.135)
 
-[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
-
 [node name="Button" type="Button" parent="."]
 modulate = Color(1, 0, 0.0235294, 1)
 light_mask = 0
-offset_left = 401.0
+offset_left = 391.0
 offset_top = -127.0
-offset_right = 610.0
+offset_right = 600.0
 offset_bottom = -96.0
-text = "Demeter: HUSTLER   22:11"
+text = "Demeter: HUSTLER   "
+alignment = 0
+
+[node name="Button" type="Button" parent="Button"]
+modulate = Color(1, 0, 0.0235294, 1)
+light_mask = 0
+layout_mode = 0
+offset_top = 40.0
+offset_right = 208.0
+offset_bottom = 71.0
+text = "Call me sleeper - SINFUL   "
+alignment = 0
 
 [connection signal="mouse_entered" from="HSlider" to="." method="_on_h_slider_mouse_entered"]
 [connection signal="button_down" from="Button9" to="." method="_on_button_9_button_down"]
