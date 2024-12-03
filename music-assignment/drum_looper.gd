@@ -1,7 +1,7 @@
 extends  Node2D
 
 func _on_button_7_button_down() -> void:
-	$harmony.play()
+	$demeter.play()
 	pass # Replace with function body.
 
 
@@ -32,7 +32,7 @@ func _on_area_2d_input_event(viewport: Node, event: InputEvent, shape_idx: int) 
 	print(event.position)
 
 	var s = remap(event.position.x, 902, 1017, 0, 2)
-	$harmony.pitch_scale = s
+	$demeter.pitch_scale = s
 	var p = get_viewport().get_mouse_position()
 
 
@@ -44,11 +44,23 @@ func _on_area_2d_input_event(viewport: Node, event: InputEvent, shape_idx: int) 
 	pass # Replace with function body.
 
 
-func _on_button_10_button_down() -> void:
-	$floortom.play()
-	pass # Replace with function body.
 
 
 func _on_button_11_button_down() -> void:
 	$"bass drum".play()
+	pass # Replace with function body.
+
+
+func _on_button_2_button_down() -> void:
+	$sinfull.play()
+	pass # Replace with function body.
+
+
+func _on_button_12_button_down() -> void:
+	$sinfull.play()
+	pass # Replace with function body.
+
+
+func _on_button_13_button_down() -> void:
+	$"floor tom".play()
 	pass # Replace with function body.

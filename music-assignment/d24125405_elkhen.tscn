@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=3 uid="uid://5tyhlvidg3nl"]
+[gd_scene load_steps=18 format=3 uid="uid://5tyhlvidg3nl"]
 
 [ext_resource type="Texture2D" uid="uid://c46lx3fhe4wdi" path="res://Beginner Drum Kit_ Setting up the Drum Kit.jpg" id="1_6rm3y"]
 [ext_resource type="Script" path="res://drum_looper.gd" id="2_2t6h2"]
@@ -14,6 +14,7 @@
 [ext_resource type="Texture2D" uid="uid://cnn8vtsp5p4xn" path="res://drum.png" id="12_eup7h"]
 [ext_resource type="Texture2D" uid="uid://gkgkbfu6fdna" path="res://ss.png" id="13_ktw0o"]
 [ext_resource type="AudioStream" uid="uid://bi776eftdvjxd" path="res://floor-tom-2-87286.mp3" id="14_nmaxj"]
+[ext_resource type="AudioStream" uid="uid://copi0b7a3jols" path="res://Call Me Sleeper - SINFUL.mp3" id="15_a2w4l"]
 
 [sub_resource type="Environment" id="Environment_pepdv"]
 background_mode = 3
@@ -33,11 +34,11 @@ metadata/_edit_horizontal_guides_ = [-13.0]
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource("Environment_pepdv")
 
-[node name="harmony" type="AudioStreamPlayer2D" parent="."]
+[node name="demeter" type="AudioStreamPlayer2D" parent="."]
 position = Vector2(-38.5936, -54.5805)
 rotation = -0.00159953
 stream = ExtResource("3_w751x")
-volume_db = -10.349
+volume_db = 1.0
 
 [node name="Node2D" type="Node2D" parent="."]
 position = Vector2(-38.5936, -54.5805)
@@ -61,16 +62,19 @@ pivot_offset = Vector2(114.422, 179.135)
 position = Vector2(-38.5936, -54.5805)
 rotation = -0.00159953
 stream = ExtResource("5_x4n78")
+volume_db = 24.0
 
 [node name="small tom" type="AudioStreamPlayer2D" parent="."]
 position = Vector2(-38.5936, -54.5805)
 rotation = -0.00159953
 stream = ExtResource("6_0prsp")
+volume_db = 24.0
 
 [node name="bass drum" type="AudioStreamPlayer2D" parent="."]
 position = Vector2(-38.5936, -54.5805)
 rotation = -0.00159953
 stream = ExtResource("7_u3d4o")
+volume_db = 24.0
 
 [node name="Back" type="Sprite2D" parent="."]
 position = Vector2(375, 120)
@@ -86,7 +90,7 @@ scale = Vector2(0.188073, 0.642699)
 texture = ExtResource("10_22uxr")
 offset = Vector2(-276.035, 188.365)
 
-[node name="FloorDrum" type="Sprite2D" parent="."]
+[node name="bassdrum" type="Sprite2D" parent="."]
 position = Vector2(72, 123.236)
 rotation = 1.56525
 scale = Vector2(1.0168, 0.999984)
@@ -184,6 +188,13 @@ scale = Vector2(0.607798, 0.58134)
 texture = ExtResource("12_eup7h")
 offset = Vector2(-111.913, 66.5528)
 
+[node name="Button13" type="Button" parent="."]
+self_modulate = Color(1, 1, 1, 0.238)
+offset_left = -213.0
+offset_top = 186.0
+offset_right = -67.0
+offset_bottom = 321.0
+
 [node name="Ss4" type="Sprite2D" parent="."]
 position = Vector2(8, 53)
 rotation = 1.56614
@@ -223,28 +234,19 @@ pivot_offset = Vector2(69.8922, -114.937)
 
 [node name="Button5" type="Button" parent="."]
 self_modulate = Color(1, 1, 1, 0.0392157)
-offset_left = -32.0614
-offset_top = 114.682
-offset_right = 45.9386
-offset_bottom = 195.682
+offset_left = 2.0
+offset_top = 249.0
+offset_right = 110.0
+offset_bottom = 351.0
 rotation = 1.57727
 pivot_offset = Vector2(107.707, 1.12375)
 
-[node name="Button10" type="Button" parent="."]
-self_modulate = Color(1, 1, 1, 0.0392157)
-offset_left = 137.0
-offset_top = 122.0
-offset_right = 264.0
-offset_bottom = 255.0
-rotation = 1.56544
-pivot_offset = Vector2(-141.176, -72.2744)
-
 [node name="Button3" type="Button" parent="."]
 self_modulate = Color(1, 1, 1, 0.0392157)
-offset_left = 85.0
-offset_top = 100.0
-offset_right = 188.0
-offset_bottom = 204.0
+offset_left = 53.0
+offset_top = -41.0
+offset_right = 126.0
+offset_bottom = 31.0
 rotation = 1.57127
 pivot_offset = Vector2(-15.3444, 32.927)
 
@@ -290,12 +292,6 @@ position = Vector2(799, -69)
 scale = Vector2(1.625, 0.921875)
 texture = ExtResource("8_edtqp")
 
-[node name="floortom" type="AudioStreamPlayer2D" parent="."]
-position = Vector2(-22, -45.7638)
-rotation = -0.00159953
-stream = ExtResource("14_nmaxj")
-volume_db = 1.0
-
 [node name="Button11" type="Button" parent="."]
 offset_left = -14.7136
 offset_top = -69.753
@@ -303,6 +299,26 @@ offset_right = -6.71362
 offset_bottom = -61.753
 rotation = -0.00159953
 pivot_offset = Vector2(114.422, 179.135)
+
+[node name="Button4" type="Button" parent="."]
+modulate = Color(1, 0, 0.0235294, 1)
+self_modulate = Color(1.5, 2, 2, 1)
+light_mask = 0
+offset_left = 391.0
+offset_top = -87.0
+offset_right = 599.0
+offset_bottom = -56.0
+text = "Call Me Sleeper - SINFULL  "
+alignment = 0
+
+[node name="Button12" type="Button" parent="."]
+modulate = Color(1, 0, 0.0235294, 1)
+self_modulate = Color(2.5, 1, 1, 1)
+offset_left = 611.0
+offset_top = -86.0
+offset_right = 680.0
+offset_bottom = -55.0
+text = "Play"
 
 [node name="Button" type="Button" parent="."]
 modulate = Color(1, 0, 0.0235294, 1)
@@ -315,23 +331,20 @@ offset_bottom = -96.0
 text = "Demeter: HUSTLER   "
 alignment = 0
 
-[node name="Button" type="Button" parent="Button"]
-modulate = Color(1, 0, 0.0235294, 1)
-self_modulate = Color(1.5, 2, 2, 1)
-light_mask = 0
-layout_mode = 0
-offset_top = 40.0
-offset_right = 208.0
-offset_bottom = 71.0
-text = "Call Me Sleeper - SINFUL   "
-alignment = 0
+[node name="sinfull" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("15_a2w4l")
+volume_db = 1.0
+
+[node name="floor tom" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("14_nmaxj")
 
 [connection signal="mouse_entered" from="HSlider" to="." method="_on_h_slider_mouse_entered"]
+[connection signal="button_down" from="Button13" to="." method="_on_button_13_button_down"]
 [connection signal="button_down" from="Button9" to="." method="_on_button_9_button_down"]
 [connection signal="button_down" from="Button5" to="." method="_on_button_5_button_down"]
-[connection signal="button_down" from="Button10" to="." method="_on_button_10_button_down"]
 [connection signal="button_down" from="Button3" to="." method="_on_button_3_button_down"]
 [connection signal="button_down" from="Button7" to="." method="_on_button_7_button_down"]
 [connection signal="button_down" from="Button8" to="." method="_on_button_8_button_down"]
 [connection signal="input_event" from="Area2D" to="." method="_on_area_2d_input_event"]
 [connection signal="button_down" from="Button11" to="." method="_on_button_11_button_down"]
+[connection signal="button_down" from="Button12" to="." method="_on_button_12_button_down"]
