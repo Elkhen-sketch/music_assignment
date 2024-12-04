@@ -30,8 +30,12 @@
 
 [sub_resource type="Environment" id="Environment_pepdv"]
 background_mode = 3
+ambient_light_energy = 2.94
 glow_enabled = true
 glow_blend_mode = 1
+fog_enabled = true
+fog_mode = 1
+fog_density = 1.0
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_l1eky"]
 size = Vector2(169.715, 162.11)
@@ -312,6 +316,12 @@ mouse_filter = 2
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="Area2D"]
 
+[node name="55" type="Sprite2D" parent="Area2D"]
+self_modulate = Color(1.8, 1, 1, 1)
+position = Vector2(809.966, 22.0594)
+scale = Vector2(0.191966, 0.167913)
+texture = ExtResource("25_qdvrx")
+
 [node name="Button11" type="Button" parent="."]
 offset_left = -14.7136
 offset_top = -69.753
@@ -505,11 +515,6 @@ position = Vector2(8.80331, 83.8751)
 scale = Vector2(0.749395, 0.966229)
 texture = ExtResource("25_e3657")
 
-[node name="34" type="Sprite2D" parent="34/34/34/34/34"]
-position = Vector2(8.80334, 78.4497)
-scale = Vector2(0.749395, 0.966229)
-texture = ExtResource("25_e3657")
-
 [node name="56" type="Sprite2D" parent="34/34/34/34/34"]
 self_modulate = Color(1.8, 1, 1, 1)
 position = Vector2(275.927, -12.3994)
@@ -574,6 +579,10 @@ position = Vector2(-2809.12, -66.7764)
 rotation = 1.56995
 scale = Vector2(3.86386, 2.9262)
 texture = ExtResource("26_oncea")
+
+[node name="55" type="Sprite2D" parent="34/34/34/34/34"]
+position = Vector2(-90.0623, 314.675)
+texture = ExtResource("25_qdvrx")
 
 [node name="56" type="Sprite2D" parent="34"]
 self_modulate = Color(1.5, 1, 1, 1)
