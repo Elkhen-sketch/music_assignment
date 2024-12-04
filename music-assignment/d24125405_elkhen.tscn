@@ -1,4 +1,4 @@
-[gd_scene load_steps=30 format=3 uid="uid://5tyhlvidg3nl"]
+[gd_scene load_steps=32 format=3 uid="uid://5tyhlvidg3nl"]
 
 [ext_resource type="Texture2D" uid="uid://c46lx3fhe4wdi" path="res://Beginner Drum Kit_ Setting up the Drum Kit.jpg" id="1_6rm3y"]
 [ext_resource type="Script" path="res://drum_looper.gd" id="2_2t6h2"]
@@ -27,6 +27,8 @@
 [ext_resource type="Texture2D" uid="uid://0wxucu44ydj" path="res://33.png" id="25_e3657"]
 [ext_resource type="Texture2D" uid="uid://ddbqpb2fbrwqd" path="res://55.png" id="25_qdvrx"]
 [ext_resource type="Texture2D" uid="uid://ck3w60ulceoy5" path="res://cly.png" id="26_oncea"]
+[ext_resource type="Texture2D" uid="uid://hh4ywugmak41" path="res://frummmmm.png" id="27_2cn1g"]
+[ext_resource type="Texture2D" uid="uid://c5i5x2mvyf8m3" path="res://ll.png" id="29_n4edf"]
 
 [sub_resource type="Environment" id="Environment_pepdv"]
 background_mode = 3
@@ -87,6 +89,15 @@ rotation = -0.00159953
 stream = ExtResource("6_0prsp")
 volume_db = 24.0
 
+[node name="Button9" type="Button" parent="."]
+self_modulate = Color(1, 1, 1, 0.0392157)
+offset_left = 10.0
+offset_top = 231.0
+offset_right = 57.0
+offset_bottom = 353.0
+rotation = 1.56412
+pivot_offset = Vector2(69.8922, -114.937)
+
 [node name="bass drum" type="AudioStreamPlayer2D" parent="."]
 position = Vector2(-38.5936, -54.5805)
 rotation = -0.00159953
@@ -123,30 +134,30 @@ offset = Vector2(-46.782, 70.5328)
 
 [node name="Untitled-2" type="Sprite2D" parent="."]
 self_modulate = Color(3, 2, 2, 1)
-position = Vector2(86, -202)
+position = Vector2(94.8627, -205.354)
 rotation = -0.00159953
-scale = Vector2(0.91055, 0.902074)
+scale = Vector2(0.938095, 0.915855)
 texture = ExtResource("10_22uxr")
 offset = Vector2(-212.95, 133.846)
 
 [node name="Untitled-5" type="Sprite2D" parent="."]
 self_modulate = Color(3, 2, 2, 1)
-position = Vector2(17.7557, 83.1634)
+position = Vector2(17.881, 84.8059)
 rotation = 1.56661
-scale = Vector2(0.663262, 0.681348)
+scale = Vector2(0.672417, 0.685995)
 texture = ExtResource("10_22uxr")
 offset = Vector2(-288.459, -83.0111)
 
 [node name="Untitled-3" type="Sprite2D" parent="."]
 self_modulate = Color(3, 2, 2, 1)
-position = Vector2(9, 51)
+position = Vector2(10.1469, 47.0157)
 rotation = 1.56614
-scale = Vector2(0.821674, 0.849654)
+scale = Vector2(0.836321, 0.864233)
 texture = ExtResource("10_22uxr")
 offset = Vector2(380.647, -28.5565)
 
 [node name="Untitled-6" type="Sprite2D" parent="."]
-self_modulate = Color(3, 2, 2, 1)
+self_modulate = Color(4, 2, 2, 1)
 position = Vector2(74.007, 112.695)
 rotation = 1.57727
 scale = Vector2(0.611252, 0.589566)
@@ -163,17 +174,17 @@ offset = Vector2(134.144, -138.228)
 
 [node name="Untitled-8" type="Sprite2D" parent="."]
 self_modulate = Color(3, 2, 2, 1)
-position = Vector2(73, 125)
+position = Vector2(74.8097, 124.228)
 rotation = 1.57127
-scale = Vector2(0.699368, 0.704666)
+scale = Vector2(0.722317, 0.732305)
 texture = ExtResource("10_22uxr")
 offset = Vector2(99.0306, 29.2554)
 
 [node name="Untitled-4" type="Sprite2D" parent="."]
 self_modulate = Color(3, 2, 2, 1)
-position = Vector2(45.8889, 75.313)
+position = Vector2(44.8209, 74.7544)
 rotation = 1.57325
-scale = Vector2(0.844037, 0.826898)
+scale = Vector2(0.862419, 0.840677)
 texture = ExtResource("10_22uxr")
 offset = Vector2(-78.7536, -186.108)
 
@@ -251,15 +262,6 @@ rotation = 1.56661
 scale = Vector2(0.703125, 0.733696)
 texture = ExtResource("13_ktw0o")
 offset = Vector2(-275.371, -75.2385)
-
-[node name="Button9" type="Button" parent="."]
-self_modulate = Color(1, 1, 1, 0.0392157)
-offset_left = 10.0
-offset_top = 231.0
-offset_right = 57.0
-offset_bottom = 353.0
-rotation = 1.56412
-pivot_offset = Vector2(69.8922, -114.937)
 
 [node name="Button5" type="Button" parent="."]
 self_modulate = Color(1, 1, 1, 0.0392157)
@@ -647,6 +649,14 @@ scale = Vector2(0.717688, 0.69606)
 skew = 0.00106621
 texture = ExtResource("25_c2rtm")
 
+[node name="Frummmmm" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(48.0905, 194.573)
+rotation = 1.69431
+scale = Vector2(0.798832, 0.815182)
+skew = -0.0589373
+texture = ExtResource("27_2cn1g")
+
 [node name="Drummm5" type="Sprite2D" parent="."]
 position = Vector2(33.8818, 45.313)
 rotation = 1.57455
@@ -685,12 +695,6 @@ rotation = 1.57171
 scale = Vector2(0.0590722, 0.0700682)
 texture = ExtResource("16_1wxrd")
 
-[node name="Mmm5" type="Sprite2D" parent="."]
-position = Vector2(-129, 70)
-rotation = 1.56967
-scale = Vector2(0.0960989, 0.101106)
-texture = ExtResource("16_1wxrd")
-
 [node name="Mmm6" type="Sprite2D" parent="."]
 position = Vector2(97, -144)
 rotation = 1.57018
@@ -727,10 +731,16 @@ rotation = 1.58078
 scale = Vector2(0.348689, 0.143807)
 texture = ExtResource("25_e3657")
 
+[node name="Ll" type="Sprite2D" parent="."]
+position = Vector2(-81, 71)
+rotation = 1.56738
+scale = Vector2(0.0835022, 0.0903014)
+texture = ExtResource("29_n4edf")
+
 [connection signal="mouse_entered" from="HSlider" to="." method="_on_h_slider_mouse_entered"]
+[connection signal="button_down" from="Button9" to="." method="_on_button_9_button_down"]
 [connection signal="button_down" from="Button13" to="." method="_on_button_13_button_down"]
 [connection signal="button_down" from="Buttonhihat" to="." method="_on_buttonhihat_button_down"]
-[connection signal="button_down" from="Button9" to="." method="_on_button_9_button_down"]
 [connection signal="button_down" from="Button5" to="." method="_on_button_5_button_down"]
 [connection signal="button_down" from="Button3" to="." method="_on_button_3_button_down"]
 [connection signal="button_down" from="Button7" to="." method="_on_button_7_button_down"]
