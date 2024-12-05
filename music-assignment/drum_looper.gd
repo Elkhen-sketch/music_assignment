@@ -9,6 +9,14 @@ func _on_button_7_button_down() -> void:
 		$demeter.play()
 	pass # Replace with function body.
 
+func _process(delta: float) -> void:
+	if Input.is_action_just_pressed("Bass drum"):
+		if $bassdrum2.playing:
+			$bassdrum2.stop()
+		else:
+			$bassdrum2.play()
+	queue_redraw()
+	pass
 
 func _on_button_3_button_down() -> void:
 	$mediumtom.play()
@@ -26,7 +34,7 @@ func _on_button_5_button_down() -> void:
 
 
 func _on_button_9_button_down() -> void:
-	$"bass drum".play()
+	$bassdrum2.play()
 	pass # Replace with function body.
 	
 

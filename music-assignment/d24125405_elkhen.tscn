@@ -1,4 +1,4 @@
-[gd_scene load_steps=32 format=3 uid="uid://5tyhlvidg3nl"]
+[gd_scene load_steps=31 format=3 uid="uid://5tyhlvidg3nl"]
 
 [ext_resource type="Texture2D" uid="uid://c46lx3fhe4wdi" path="res://Beginner Drum Kit_ Setting up the Drum Kit.jpg" id="1_6rm3y"]
 [ext_resource type="Script" path="res://drum_looper.gd" id="2_2t6h2"]
@@ -12,7 +12,6 @@
 [ext_resource type="AudioStream" uid="uid://bh8imgkjq52fs" path="res://low-floor-tom-level-2-106160.mp3" id="10_bpwvk"]
 [ext_resource type="Texture2D" uid="uid://d2rbqqhymwinn" path="res://floor drum.png" id="11_j5gar"]
 [ext_resource type="Texture2D" uid="uid://cnn8vtsp5p4xn" path="res://drum.png" id="12_eup7h"]
-[ext_resource type="Texture2D" uid="uid://gkgkbfu6fdna" path="res://ss.png" id="13_ktw0o"]
 [ext_resource type="AudioStream" uid="uid://bi776eftdvjxd" path="res://floor-tom-2-87286.mp3" id="14_nmaxj"]
 [ext_resource type="AudioStream" uid="uid://dcq8c512l1pwr" path="res://hi-hat-231042.mp3" id="14_w2hqf"]
 [ext_resource type="AudioStream" uid="uid://copi0b7a3jols" path="res://Call Me Sleeper - SINFUL.mp3" id="15_a2w4l"]
@@ -48,7 +47,7 @@ texture = ExtResource("1_6rm3y")
 script = ExtResource("2_2t6h2")
 metadata/_edit_lock_ = true
 metadata/_edit_horizontal_guides_ = [-13.0, 227.0]
-metadata/_edit_vertical_guides_ = [1111.0, 915.0, 1067.0, 935.0, 1049.0, 949.0, 1035.0, 959.0, 1023.0, 969.0, 1017.0, 978.0, 1012.0]
+metadata/_edit_vertical_guides_ = [1111.0, 915.0, 1067.0, 935.0, 1049.0, 949.0, 1035.0, 959.0, 1023.0, 969.0, 1017.0, 978.0, 1012.0, 610.0]
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource("Environment_pepdv")
@@ -98,7 +97,7 @@ offset_bottom = 353.0
 rotation = 1.56412
 pivot_offset = Vector2(69.8922, -114.937)
 
-[node name="bass drum" type="AudioStreamPlayer2D" parent="."]
+[node name="bassdrum2" type="AudioStreamPlayer2D" parent="."]
 position = Vector2(-38.5936, -54.5805)
 rotation = -0.00159953
 stream = ExtResource("7_u3d4o")
@@ -150,7 +149,7 @@ offset = Vector2(-288.459, -83.0111)
 
 [node name="Untitled-3" type="Sprite2D" parent="."]
 self_modulate = Color(3, 2, 2, 1)
-position = Vector2(10.1469, 47.0157)
+position = Vector2(14.1469, 55.0157)
 rotation = 1.56614
 scale = Vector2(0.836321, 0.864233)
 texture = ExtResource("10_22uxr")
@@ -222,13 +221,6 @@ offset_left = -209.0
 offset_top = 188.0
 offset_right = -76.0
 offset_bottom = 319.0
-
-[node name="Ss4" type="Sprite2D" parent="."]
-position = Vector2(8, 53)
-rotation = 1.56614
-scale = Vector2(0.882468, 0.953588)
-texture = ExtResource("13_ktw0o")
-offset = Vector2(353.115, -24.8777)
 
 [node name="hihat" type="AudioStreamPlayer2D" parent="."]
 position = Vector2(17.4591, 84.1646)
@@ -458,10 +450,10 @@ volume_db = 13.358
 
 [node name="Buttonclay" type="Button" parent="."]
 self_modulate = Color(1, 1, 1, 0)
-offset_left = -25.0
-offset_top = 304.0
-offset_right = 96.0
-offset_bottom = 426.0
+offset_left = -20.0
+offset_top = 312.0
+offset_right = 101.0
+offset_bottom = 434.0
 
 [node name="berserkrD" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("21_kgf0e")
@@ -550,7 +542,7 @@ scale = Vector2(4.81679, 3.66435)
 texture = ExtResource("26_oncea")
 
 [node name="Cly3" type="Sprite2D" parent="34/34/34/34/34"]
-position = Vector2(-2957.96, 2492.32)
+position = Vector2(-2932.87, 2546.03)
 rotation = 1.56866
 scale = Vector2(4.72932, 3.80328)
 texture = ExtResource("26_oncea")
@@ -715,6 +707,16 @@ position = Vector2(-81, 71)
 rotation = 1.56738
 scale = Vector2(0.0835022, 0.0903014)
 texture = ExtResource("29_n4edf")
+
+[node name="Button2" type="Button" parent="."]
+modulate = Color(1, 0, 0.0235294, 1)
+offset_left = 410.0
+offset_top = 322.0
+offset_right = 907.0
+offset_bottom = 399.0
+text = "Warning: Speed controller works only for a \"Demeter: HUSTLER\" remix. Because, it might be too sensitive. Otherwise, volume controller is working for all playlists. Thank you."
+alignment = 0
+autowrap_mode = 2
 
 [connection signal="mouse_entered" from="HSlider" to="." method="_on_h_slider_mouse_entered"]
 [connection signal="button_down" from="Button9" to="." method="_on_button_9_button_down"]
