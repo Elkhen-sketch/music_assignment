@@ -16,9 +16,6 @@ func _process(delta: float) -> void:
 		else:
 			$bassdrum2.play()
 	queue_redraw()
-	pass
-	
-func _process(delta: float) -> void:
 	if Input.is_action_just_pressed("Medium tom"):
 		if $mediumtom.playing:
 			$mediumtom.stop()
