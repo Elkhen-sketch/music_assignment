@@ -22,6 +22,42 @@ func _process(delta: float) -> void:
 		else:
 			$mediumtom.play()
 	queue_redraw()
+	if Input.is_action_just_pressed("Snare drum"):
+		if $"snare drum".playing:
+			$"snare drum".stop()
+		else:
+			$"snare drum".play()
+	queue_redraw()
+	if Input.is_action_just_pressed("Small tom"):
+		if $"small tom".playing:
+			$"small tom".stop()
+		else:
+			$"small tom".play()
+	queue_redraw()
+	if Input.is_action_just_pressed("Low tom"):
+		if $lowtomD.playing:
+			$lowtomD.stop()
+		else:
+			$lowtomD.play()
+	queue_redraw()
+	if Input.is_action_just_pressed("Hi hat"):
+		if $hihat.playing:
+			$hihat.stop()
+		else:
+			$hihat.play()
+	queue_redraw()
+	if Input.is_action_just_pressed("Crush symbal"):
+		if $"crush symbal".playing:
+			$"crush symbal".stop()
+		else:
+			$"crush symbal".play()
+	queue_redraw()
+	if Input.is_action_just_pressed("Clay"):
+		if $clay.playing:
+			$clay.stop()
+		else:
+			$clay.play()
+	queue_redraw()
 	pass
 
 func _on_button_3_button_down() -> void:

@@ -47,7 +47,7 @@ texture = ExtResource("1_6rm3y")
 script = ExtResource("2_2t6h2")
 metadata/_edit_lock_ = true
 metadata/_edit_horizontal_guides_ = [-13.0, 227.0]
-metadata/_edit_vertical_guides_ = [1111.0, 915.0, 1067.0, 935.0, 1049.0, 949.0, 1035.0, 959.0, 1023.0, 969.0, 1017.0, 978.0, 1012.0, 610.0, 829.0, 900.0, 824.0, 661.0]
+metadata/_edit_vertical_guides_ = [1111.0, 915.0, 1067.0, 935.0, 1049.0, 949.0, 1035.0, 959.0, 1023.0, 969.0, 1017.0, 978.0, 1012.0, 610.0, 829.0, 900.0, 824.0, 661.0, 714.0]
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource("Environment_pepdv")
@@ -351,36 +351,116 @@ text = "Play"
 modulate = Color(1, 0, 0.0235294, 1)
 self_modulate = Color(2.5, 1, 1, 1)
 offset_left = 628.0
-offset_top = 90.0
+offset_top = 91.0
 offset_right = 697.0
-offset_bottom = 121.0
+offset_bottom = 122.0
 text = "G"
 
 [node name="Button20" type="Button" parent="."]
 modulate = Color(1, 0, 0.0235294, 1)
 self_modulate = Color(2.5, 1, 1, 1)
 offset_left = 628.0
-offset_top = 209.0
+offset_top = 210.0
 offset_right = 697.0
-offset_bottom = 240.0
-text = "Play"
+offset_bottom = 241.0
+text = "J"
+
+[node name="Button27" type="Button" parent="."]
+modulate = Color(1, 0, 0.0235294, 1)
+self_modulate = Color(2.5, 1, 1, 1)
+offset_left = 840.0
+offset_top = 91.0
+offset_right = 909.0
+offset_bottom = 122.0
+text = "K"
+
+[node name="Button28" type="Button" parent="."]
+modulate = Color(1, 0, 0.0235294, 1)
+self_modulate = Color(2.5, 1, 1, 1)
+offset_left = 840.0
+offset_top = 210.0
+offset_right = 909.0
+offset_bottom = 241.0
+text = "S"
+
+[node name="Button29" type="Button" parent="."]
+modulate = Color(1, 0, 0.0235294, 1)
+self_modulate = Color(2.5, 1, 1, 1)
+offset_left = 840.0
+offset_top = 170.0
+offset_right = 909.0
+offset_bottom = 201.0
+text = "D"
+
+[node name="Button30" type="Button" parent="."]
+modulate = Color(1, 0, 0.0235294, 1)
+self_modulate = Color(2.5, 1, 1, 1)
+offset_left = 840.0
+offset_top = 131.0
+offset_right = 909.0
+offset_bottom = 162.0
+text = "L"
+
+[node name="Button31" type="Button" parent="."]
+modulate = Color(1, 0, 0.0235294, 1)
+self_modulate = Color(1.5, 2, 2, 1)
+light_mask = 0
+offset_left = 711.0
+offset_top = 211.0
+offset_right = 820.0
+offset_bottom = 242.0
+text = "Clay"
+alignment = 0
+
+[node name="Button32" type="Button" parent="."]
+modulate = Color(1, 0, 0.0235294, 1)
+self_modulate = Color(1.5, 2, 2, 1)
+light_mask = 0
+offset_left = 711.0
+offset_top = 171.0
+offset_right = 820.0
+offset_bottom = 202.0
+text = "Crush symbal"
+alignment = 0
+
+[node name="Button33" type="Button" parent="."]
+modulate = Color(1, 0, 0.0235294, 1)
+self_modulate = Color(1.5, 2, 2, 1)
+light_mask = 0
+offset_left = 712.0
+offset_top = 132.0
+offset_right = 820.0
+offset_bottom = 163.0
+text = "Hi hat"
+alignment = 0
+
+[node name="Button34" type="Button" parent="."]
+modulate = Color(1, 0, 0.0235294, 1)
+self_modulate = Color(1.5, 2, 2, 1)
+light_mask = 0
+offset_left = 512.0
+offset_top = 131.0
+offset_right = 622.0
+offset_bottom = 162.0
+text = "Medium tom"
+alignment = 0
 
 [node name="Button21" type="Button" parent="."]
 modulate = Color(1, 0, 0.0235294, 1)
 self_modulate = Color(2.5, 1, 1, 1)
 offset_left = 628.0
-offset_top = 169.0
+offset_top = 170.0
 offset_right = 697.0
-offset_bottom = 200.0
-text = "Play"
+offset_bottom = 201.0
+text = "H"
 
 [node name="Button22" type="Button" parent="."]
 modulate = Color(1, 0, 0.0235294, 1)
 self_modulate = Color(2.5, 1, 1, 1)
 offset_left = 628.0
-offset_top = 130.0
+offset_top = 132.0
 offset_right = 697.0
-offset_bottom = 161.0
+offset_bottom = 163.0
 text = "F"
 
 [node name="Button12" type="Button" parent="."]
@@ -396,38 +476,40 @@ text = "Play"
 modulate = Color(1, 0, 0.0235294, 1)
 self_modulate = Color(1.5, 2, 2, 1)
 light_mask = 0
-offset_left = 460.0
+offset_left = 514.0
 offset_top = 210.0
 offset_right = 621.0
 offset_bottom = 241.0
+text = "Small tom"
 alignment = 0
 
 [node name="Button26" type="Button" parent="."]
 modulate = Color(1, 0, 0.0235294, 1)
 self_modulate = Color(1.5, 2, 2, 1)
 light_mask = 0
-offset_left = 460.0
+offset_left = 512.0
 offset_top = 170.0
 offset_right = 621.0
 offset_bottom = 201.0
+text = "Snare drum"
 alignment = 0
 
 [node name="Button24" type="Button" parent="."]
 modulate = Color(1, 0, 0.0235294, 1)
 self_modulate = Color(1.5, 2, 2, 1)
 light_mask = 0
-offset_left = 459.0
-offset_top = 131.0
-offset_right = 621.0
-offset_bottom = 162.0
-text = "Medium tom"
+offset_left = 713.0
+offset_top = 90.0
+offset_right = 821.0
+offset_bottom = 121.0
+text = "Low tom"
 alignment = 0
 
 [node name="Button23" type="Button" parent="."]
 modulate = Color(1, 0, 0.0235294, 1)
 self_modulate = Color(1.5, 2, 2, 1)
 light_mask = 0
-offset_left = 459.0
+offset_left = 513.0
 offset_top = 91.0
 offset_right = 620.0
 offset_bottom = 122.0
@@ -787,7 +869,7 @@ offset_left = 410.0
 offset_top = 322.0
 offset_right = 907.0
 offset_bottom = 399.0
-text = "Warning: Speed controller works only for a \"Demeter: HUSTLER\" remix. Because, it might be too sensitive. Otherwise, volume controller is working for all playlists. Thank you."
+text = "Warning: Speed controller works only for a \"Demeter: HUSTLER\" remix. Because, it might be too sensitive.        Volume controller is working for all playlists. Thank you."
 alignment = 0
 autowrap_mode = 2
 
