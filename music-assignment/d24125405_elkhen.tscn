@@ -47,7 +47,7 @@ texture = ExtResource("1_6rm3y")
 script = ExtResource("2_2t6h2")
 metadata/_edit_lock_ = true
 metadata/_edit_horizontal_guides_ = [-13.0, 227.0]
-metadata/_edit_vertical_guides_ = [1111.0, 915.0, 1067.0, 935.0, 1049.0, 949.0, 1035.0, 959.0, 1023.0, 969.0, 1017.0, 978.0, 1012.0, 610.0]
+metadata/_edit_vertical_guides_ = [1111.0, 915.0, 1067.0, 935.0, 1049.0, 949.0, 1035.0, 959.0, 1023.0, 969.0, 1017.0, 978.0, 1012.0, 610.0, 829.0, 900.0, 824.0, 661.0]
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource("Environment_pepdv")
@@ -57,11 +57,6 @@ position = Vector2(-38.5936, -54.5805)
 rotation = -0.00159953
 stream = ExtResource("3_w751x")
 volume_db = 10.0
-
-[node name="Node2D" type="Node2D" parent="."]
-position = Vector2(-38.5936, -54.5805)
-rotation = -0.00159953
-script = ExtResource("2_2t6h2")
 
 [node name="mediumtom" type="AudioStreamPlayer2D" parent="."]
 position = Vector2(-38.5936, -54.5805)
@@ -104,6 +99,7 @@ stream = ExtResource("7_u3d4o")
 volume_db = 24.0
 
 [node name="Back" type="Sprite2D" parent="."]
+visible = false
 position = Vector2(375, 120)
 scale = Vector2(0.887692, 0.646)
 texture = ExtResource("9_thmgi")
@@ -352,6 +348,42 @@ offset_right = 697.0
 offset_bottom = -15.0
 text = "Play"
 
+[node name="Button19" type="Button" parent="."]
+modulate = Color(1, 0, 0.0235294, 1)
+self_modulate = Color(2.5, 1, 1, 1)
+offset_left = 628.0
+offset_top = 90.0
+offset_right = 697.0
+offset_bottom = 121.0
+text = "G"
+
+[node name="Button20" type="Button" parent="."]
+modulate = Color(1, 0, 0.0235294, 1)
+self_modulate = Color(2.5, 1, 1, 1)
+offset_left = 628.0
+offset_top = 209.0
+offset_right = 697.0
+offset_bottom = 240.0
+text = "Play"
+
+[node name="Button21" type="Button" parent="."]
+modulate = Color(1, 0, 0.0235294, 1)
+self_modulate = Color(2.5, 1, 1, 1)
+offset_left = 628.0
+offset_top = 169.0
+offset_right = 697.0
+offset_bottom = 200.0
+text = "Play"
+
+[node name="Button22" type="Button" parent="."]
+modulate = Color(1, 0, 0.0235294, 1)
+self_modulate = Color(2.5, 1, 1, 1)
+offset_left = 628.0
+offset_top = 130.0
+offset_right = 697.0
+offset_bottom = 161.0
+text = "F"
+
 [node name="Button12" type="Button" parent="."]
 modulate = Color(1, 0, 0.0235294, 1)
 self_modulate = Color(2.5, 1, 1, 1)
@@ -360,6 +392,48 @@ offset_top = -85.0
 offset_right = 697.0
 offset_bottom = -54.0
 text = "Play"
+
+[node name="Button25" type="Button" parent="."]
+modulate = Color(1, 0, 0.0235294, 1)
+self_modulate = Color(1.5, 2, 2, 1)
+light_mask = 0
+offset_left = 460.0
+offset_top = 210.0
+offset_right = 621.0
+offset_bottom = 241.0
+alignment = 0
+
+[node name="Button26" type="Button" parent="."]
+modulate = Color(1, 0, 0.0235294, 1)
+self_modulate = Color(1.5, 2, 2, 1)
+light_mask = 0
+offset_left = 460.0
+offset_top = 170.0
+offset_right = 621.0
+offset_bottom = 201.0
+alignment = 0
+
+[node name="Button24" type="Button" parent="."]
+modulate = Color(1, 0, 0.0235294, 1)
+self_modulate = Color(1.5, 2, 2, 1)
+light_mask = 0
+offset_left = 459.0
+offset_top = 131.0
+offset_right = 621.0
+offset_bottom = 162.0
+text = "Medium tom"
+alignment = 0
+
+[node name="Button23" type="Button" parent="."]
+modulate = Color(1, 0, 0.0235294, 1)
+self_modulate = Color(1.5, 2, 2, 1)
+light_mask = 0
+offset_left = 459.0
+offset_top = 91.0
+offset_right = 620.0
+offset_bottom = 122.0
+text = "Bass drum"
+alignment = 0
 
 [node name="Button14" type="Button" parent="."]
 modulate = Color(1, 0, 0.0235294, 1)
