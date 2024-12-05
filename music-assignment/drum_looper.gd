@@ -1,7 +1,12 @@
 extends  Node2D
 
 func _on_button_7_button_down() -> void:
-	$demeter.play()
+	if $demeter.playing:
+		$Button7.text = "play"
+		$demeter.stop()
+	else:
+		$Button7.text = "stop"
+		$demeter.play()
 	pass # Replace with function body.
 
 
@@ -57,7 +62,12 @@ func _on_button_2_button_down() -> void:
 
 
 func _on_button_12_button_down() -> void:
-	$sinfull.play()
+	if $sinfull.playing:
+		$Button12.text = "play"
+		$sinfull.stop()
+	else:
+		$Button12.text = "stop"
+		$sinfull.play()
 	pass # Replace with function body.
 
 
@@ -82,7 +92,12 @@ func _on_buttonclay_button_down() -> void:
 
 
 func _on_button_17_button_down() -> void:
-	$"loca people".play()
+	if $"loca people".playing:
+		$Button17.text = "Play"
+		$"loca people".stop()
+	else:
+		$Button17.text = "Stop"
+		$"loca people".play()
 	pass # Replace with function body.
 
 

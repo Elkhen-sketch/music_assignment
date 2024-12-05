@@ -142,7 +142,7 @@ offset = Vector2(-212.95, 133.846)
 
 [node name="Untitled-5" type="Sprite2D" parent="."]
 self_modulate = Color(3, 2, 2, 1)
-position = Vector2(17.881, 84.8059)
+position = Vector2(37, 81)
 rotation = 1.56661
 scale = Vector2(0.672417, 0.685995)
 texture = ExtResource("10_22uxr")
@@ -166,7 +166,7 @@ offset = Vector2(-108.634, 62.7169)
 
 [node name="Untitled-7" type="Sprite2D" parent="."]
 self_modulate = Color(3, 2, 2, 1)
-position = Vector2(98.6885, 98.5343)
+position = Vector2(104.689, 101.534)
 rotation = 1.57392
 scale = Vector2(1.00894, 1.04541)
 texture = ExtResource("10_22uxr")
@@ -182,7 +182,7 @@ offset = Vector2(99.0306, 29.2554)
 
 [node name="Untitled-4" type="Sprite2D" parent="."]
 self_modulate = Color(3, 2, 2, 1)
-position = Vector2(44.8209, 74.7544)
+position = Vector2(74, 80)
 rotation = 1.57325
 scale = Vector2(0.862419, 0.840677)
 texture = ExtResource("10_22uxr")
@@ -230,20 +230,6 @@ scale = Vector2(0.882468, 0.953588)
 texture = ExtResource("13_ktw0o")
 offset = Vector2(353.115, -24.8777)
 
-[node name="Ss3" type="Sprite2D" parent="."]
-position = Vector2(95.4835, 91.7063)
-rotation = 1.57392
-scale = Vector2(1.09386, 1.17455)
-texture = ExtResource("13_ktw0o")
-offset = Vector2(129.391, -124.019)
-
-[node name="Ss2" type="Sprite2D" parent="."]
-position = Vector2(45.9836, 76.6491)
-rotation = 1.57325
-scale = Vector2(0.913086, 0.940275)
-texture = ExtResource("13_ktw0o")
-offset = Vector2(-76.3278, -161.642)
-
 [node name="hihat" type="AudioStreamPlayer2D" parent="."]
 position = Vector2(17.4591, 84.1646)
 stream = ExtResource("14_w2hqf")
@@ -251,17 +237,10 @@ volume_db = 24.0
 
 [node name="Buttonhihat" type="Button" parent="."]
 self_modulate = Color(1, 1, 1, 0)
-offset_left = 26.0
-offset_top = -159.0
-offset_right = 116.0
-offset_bottom = -57.0
-
-[node name="Ss" type="Sprite2D" parent="."]
-position = Vector2(17.4591, 84.1646)
-rotation = 1.56661
-scale = Vector2(0.703125, 0.733696)
-texture = ExtResource("13_ktw0o")
-offset = Vector2(-275.371, -75.2385)
+offset_left = 47.0
+offset_top = -167.0
+offset_right = 137.0
+offset_bottom = -65.0
 
 [node name="Button5" type="Button" parent="."]
 self_modulate = Color(1, 1, 1, 0.0392157)
@@ -460,10 +439,10 @@ volume_db = 8.588
 
 [node name="Buttoncrushsymbal" type="Button" parent="."]
 self_modulate = Color(1, 1, 1, 0)
-offset_left = 135.0
-offset_top = -52.0
-offset_right = 268.0
-offset_bottom = 72.0
+offset_left = 164.0
+offset_top = -50.0
+offset_right = 297.0
+offset_bottom = 74.0
 
 [node name="Buttoncrushsymbal" type="Button" parent="Buttoncrushsymbal"]
 self_modulate = Color(1, 1, 1, 0)
@@ -559,13 +538,13 @@ skew = 0.00117028
 texture = ExtResource("25_c2rtm")
 
 [node name="Cly" type="Sprite2D" parent="34/34/34/34/34"]
-position = Vector2(-2145.81, 1790.39)
+position = Vector2(-2123.82, 1799.72)
 rotation = -4.71767
 scale = Vector2(5.89376, 4.66561)
 texture = ExtResource("26_oncea")
 
 [node name="Cly2" type="Sprite2D" parent="34/34/34/34/34"]
-position = Vector2(-2308.55, 564.847)
+position = Vector2(-2188.89, 575.095)
 rotation = 1.58003
 scale = Vector2(4.81679, 3.66435)
 texture = ExtResource("26_oncea")
@@ -577,7 +556,7 @@ scale = Vector2(4.72932, 3.80328)
 texture = ExtResource("26_oncea")
 
 [node name="Cly4" type="Sprite2D" parent="34/34/34/34/34"]
-position = Vector2(-2809.12, -66.7764)
+position = Vector2(-2729.25, -92.2316)
 rotation = 1.56995
 scale = Vector2(3.86386, 2.9262)
 texture = ExtResource("26_oncea")
@@ -696,7 +675,7 @@ scale = Vector2(0.0590722, 0.0700682)
 texture = ExtResource("16_1wxrd")
 
 [node name="Mmm6" type="Sprite2D" parent="."]
-position = Vector2(97, -144)
+position = Vector2(107, -147)
 rotation = 1.57018
 scale = Vector2(0.0666959, 0.0756872)
 texture = ExtResource("16_1wxrd")
@@ -708,7 +687,7 @@ scale = Vector2(0.0758443, 0.0823004)
 texture = ExtResource("16_1wxrd")
 
 [node name="Mmm8" type="Sprite2D" parent="."]
-position = Vector2(225, -36)
+position = Vector2(256, -38)
 rotation = 1.56603
 scale = Vector2(0.0682609, 0.0758275)
 texture = ExtResource("16_1wxrd")
